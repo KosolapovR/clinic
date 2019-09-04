@@ -1,5 +1,4 @@
 <?php
-
 require_once 'core/functions.php';
 
 class Router {
@@ -18,12 +17,12 @@ class Router {
         //выделяем название контроллера и экшина
                $controller = array_shift($segments) . "Controller";
                $action_name = ucfirst(array_shift($segments));
-               echo $controller;
+               //echo $controller;
                if ($action_name != null){
                $action = "action" . $action_name; 
                }     
                $controller_path = "controllers/" . $controller . ".php";
-               echo "<br>" . $controller_path; 
+               //echo "<br>" . $controller_path; 
                if(file_exists($controller_path)){
                    require_once $controller_path;
                    $controller_object = new $controller;
@@ -38,20 +37,5 @@ class Router {
                }
            }
        }
-//       if (!array_key_exists($controller, $routes)) {
-//           include_once 'controllers/mainController.php';
-//           new MainController();
-//       } else {
-//           foreach ($routes as $route => $controller_name){
-//                if ($route == $controller) {
-//                    include_once  "controllers/" . $controller . "Controller.php";
-//                    $current_controller = new $controller_name;
-//                    if(method_exists($current_controller, $action_name)){
-//                        $current_controller->$action_name($id);
-//                        break;
-//                    }
-//                }
-//           }
-//       }
     }
 }

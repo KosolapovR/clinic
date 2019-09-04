@@ -16,6 +16,20 @@ class LoginController {
     }
     
     public function actionIndex(){
-        include_once ROOT . "/views/login.php";
+        //вызов модели   
+        if(isset($_REQUEST['login'])) {
+           include_once MODELS . "/LoginModel.php";
+        
+            //проверка наличия пользователя в списке зарегистрированных
+            if(LoginModel::checkLogin($_REQUEST['name'], $_REQUEST['pass'])){
+                //редирект на главную страницу, ползователь существует
+                header("Location: main");
+            }  
+            
+        }
+            
+        //вызов представления базовый сценарий
+        include_once VIEWS . "/login.php";
+        
     }
 }
