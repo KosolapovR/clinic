@@ -1,0 +1,18 @@
+@import "mixins.scss";
+// footer
+
+
+
+footer{
+    height: 60px; 
+    background: brown;
+    
+    .whrapper{
+       @include justify;
+        text-align: center;
+    }
+}
+    
+
+        
+     

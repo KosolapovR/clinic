@@ -1,0 +1,7 @@
+footer {
+  height: 60px;
+  background: brown; }
+  footer .whrapper {
+    margin: 0 auto;
+    max-width: 1360px;
+    text-align: center; }

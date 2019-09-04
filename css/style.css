@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+header {
+  background: #d9d9d9;
+  height: 60px; }
+  header nav {
+    margin: 0 auto;
+    max-width: 1360px;
+    height: 100%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-transform: uppercase; }
+    header nav .nav_left {
+      width: 50%;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      header nav .nav_left .sign_up {
+        height: 100%;
+        padding: 20px 10px; }
+        header nav .nav_left .sign_up:hover {
+          background: #a6a6a6;
+          cursor: pointer; }
+    header nav ul {
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%; }
+      header nav ul li {
+        list-style: none;
+        padding: 20px;
+        height: 100%; }
+        header nav ul li:hover {
+          background: #a6a6a6;
+          cursor: pointer; }
+
+footer {
+  height: 60px;
+  background: brown; }
+  footer .whrapper {
+    margin: 0 auto;
+    max-width: 1360px;
+    text-align: center; }
+
+main {
+  margin: 0 auto;
+  max-width: 1360px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  main aside {
+    width: 300px;
+    background: #ddd; }
+  main .left_bar {
+    padding: 10px;
+    background: yellow; }
+    main .left_bar ul li {
+      list-style: none;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #888;
+      padding: 20px 0 20px 0; }
+  main .right_bar {
+    padding: 10px;
+    background: red; }
+    main .right_bar .person_container .person_card {
+      height: 150px;
+      background: green;
+      margin-bottom: 10px; }
+  main section {
+    height: auto;
+    background: aqua;
+    width: 100%;
+    text-align: center; }

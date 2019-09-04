@@ -1,0 +1,48 @@
+@import "mixins.scss";
+@import "header.scss";
+@import "footer.scss";
+
+main{
+    @include justify;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;   
+    justify-content: space-between;  
+  
+    aside{  
+        width: 300px;   
+        background: #ddd; 
+    }    
+    .left_bar{  
+        padding: 10px;    
+        background: yellow;
+        ul{
+            li{ 
+                list-style: none;
+                margin-bottom: 5px;   
+                border-bottom: 1px solid #888;
+                padding: 20px 0 20px 0; 
+            }
+        }  
+    }
+    .right_bar{
+        padding: 10px;
+        background: red;
+        .person_container{
+            .person_card{
+                height: 150px;
+                background: green;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    section{
+        height: auto;
+        background: aqua;
+        width: 100%;
+        
+        text-align: center;
+    } 
+} 
