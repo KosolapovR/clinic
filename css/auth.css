@@ -3,7 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
+ .text_info{
+      color: red;
+      font-size: 14px;
+      margin-top: -10px;
+      text-transform: lowercase;
+  }
 .container {
   width: 300px;
   margin: 0 auto;

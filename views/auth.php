@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>auth</title>
-    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="/css/auth.css">
 </head>
 <body>
     <div class="container">
         <form action="" method="post">
+            <?= $text_info?>
             <label for="name">Логин: </label>
+            
             <input id="name"  name="name" type="text">
+            
             <label for="pass">Пароль: </label>
             <input id="pass" name="pass" type="text">
             <label for="tel">Телефон: </label>

@@ -39,5 +39,6 @@ class AuthModel {
             
             
         } 
+        return true;
     }
 }
