@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/OSPanel/domains/blog.loc/core/routes.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/views/main.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/classes/Users.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/controllers/AuthController.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/models/AuthModel.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/index.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/views/login.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/controllers/LoginController.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/css/auth.css</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/core/Router.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/controllers/MainController.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/models/LoginModel.php</file>
+            <file>file:/D:/OSPanel/domains/blog.loc/views/auth.php</file>
+        </group>
+    </open-files>
+</project-private>

@@ -23,6 +23,9 @@ class LoginController {
             //проверка наличия пользователя в списке зарегистрированных
             if(LoginModel::checkLogin($_REQUEST['name'], $_REQUEST['pass'])){
                 //редирект на главную страницу, ползователь существует
+                
+                $_SESSION['user'] = $_REQUEST['name'];
+    
                 header("Location: main");
             }  
             

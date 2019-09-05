@@ -6,7 +6,14 @@ class Router {
     public static function run() {
         //Считываем адрес из URI
        $uri = trim($_SERVER['REQUEST_URI'], "/");
-       
+       if ($uri == null){
+           $uri = "main"; 
+       }   
+       if ($uri == 'exit'){   
+           session_unset();
+           $uri = "main"; 
+       }
+
        //Проверяем на наличие в роутах
        $routes = include_once 'core/routes.php';
        
@@ -16,8 +23,7 @@ class Router {
                
         //выделяем название контроллера и экшина
                $controller = array_shift($segments) . "Controller";
-               $action_name = ucfirst(array_shift($segments));
-               //echo $controller;
+               $action_name = ucfirst(array_shift($segments));    
                if ($action_name != null){
                $action = "action" . $action_name; 
                }     

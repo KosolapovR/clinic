@@ -17,7 +17,12 @@
               <li><a href="">контакты</a></li>
               <li><a href="">новости</a></li>
               <li><a href="">наши сотрудники</a></li>
-              <li><a href="login">личный кабинет</a></li>
+              <?php if(isset($_SESSION['user'])):?>
+              <li><a href="profile">личный кабинет <?=$_SESSION['user']?></a></li>
+              <li><a href="exit">выйти</a></li>
+              <?php else: ?>
+              <li><a href="login">войти</a></li>
+              <?php endif; ?>
           </ul>
       </nav>
   </header>

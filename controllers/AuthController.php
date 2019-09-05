@@ -20,6 +20,7 @@ class AuthController {
             //Занят ли Логин
             include_once MODELS . "/LoginModel.php";
             if(LoginModel::userExists($_REQUEST['name'])){ 
+            //сохранение в переменную информационной строки
              $text_info = "<h4 class=\"text_info\">этот логин уже занят</h4>";
              include_once VIEWS . "/auth.php";
         } else {
@@ -28,9 +29,13 @@ class AuthController {
             //проверка на заполненность всех полей
             if($_REQUEST['name'] && $_REQUEST['pass'] && $_REQUEST['tel'] && $_REQUEST['email']){
                 if (AuthModel::addNewUser($_REQUEST['name'], $_REQUEST['pass'], $_REQUEST['tel'], $_REQUEST['email'])){
+                    
+                    require_once CLASSES . "/Users.php";
+                    $cur_user = new Users($_REQUEST['name'], $_REQUEST['pass'], $_REQUEST['tel'], $_REQUEST['email']);
                     header("Location: login");            
                 }
             } else {
+                //сохранение в переменную информационной строки
                 $text_info = "<h4 class=\"text_info\"> не все поля заполнены</h4>";
                 include_once VIEWS . "/auth.php";
             }
