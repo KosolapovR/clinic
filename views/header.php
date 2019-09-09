@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Запись онлайн</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <?php if($_SERVER['REQUEST_URI'] == '/profile'):?>
+    <link rel="stylesheet" href="/css/profile.css">
+    <script src="/js/jQuery.js"></script>
+    <script src="/js/popUp.js"></script>
+    <script src="/js/ajax_update.js"></script>
+    <?php endif; ?>
+     <?php if(preg_match("/reservation/", $_SERVER['REQUEST_URI'])):?>
+    <link rel="stylesheet" href="/css/reservation.css">
+    <script src="/js/jQuery.js"></script>
+    <script src="/js/date.js"></script>
+    <?php endif; ?>
+</head>
+<body>
+  <header>
+      <nav>
+         <div class="nav_left">
+             <div class="logo">logo</div>
+              <?php if(!preg_match("/reservation/", $_SERVER['REQUEST_URI'])):?>
+              <div class="sign_up"><a href="reservation">Запись онлайн</a></div>
+              <?php endif; ?>
+             
+         </div>
+          <ul class="nav_right">
+              <?php if($_SERVER['REQUEST_URI'] != '/' && $_SERVER['REQUEST_URI'] != '/main' && $_SERVER['REQUEST_URI'] != '/exit'):?>
+              <li><a href="/main">главная</a></li>
+              <?php endif; ?>
+              <li><a href="">контакты</a></li>
+              <li><a href="">новости</a></li>
+              <li><a href="">наши сотрудники</a></li>
+              <?php if(isset($_SESSION[session_id()])):?>
+              <li><a href="/profile">личный кабинет <?=$_SESSION[session_id()]?></a></li>
+              <li><a href="/exit">выйти</a></li>
+              <?php else: ?>
+              <li><a href="/login">войти</a></li>
+              <?php endif; ?>
+          </ul>
+      </nav>
+  </header>

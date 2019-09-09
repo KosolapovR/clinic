@@ -8,6 +8,7 @@
 <body>
     <div class="container">
         <form action="" method="post">
+            <h4><?=$text_info?></h4>
             <label for="name">Логин: </label>
             <input id="name"  name="name" type="text">
             <label for="pass">Пароль: </label>

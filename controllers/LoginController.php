@@ -12,22 +12,24 @@
  * @author Роман
  */
 class LoginController {
-    public function __construct() {
-    }
     
     public function actionIndex(){
         //вызов модели   
+        $text_info = "";
         if(isset($_REQUEST['login'])) {
            include_once MODELS . "/LoginModel.php";
         
             //проверка наличия пользователя в списке зарегистрированных
-            if(LoginModel::checkLogin($_REQUEST['name'], $_REQUEST['pass'])){
+            if(model\LoginModel::checkLogin($_REQUEST['name'], $_REQUEST['pass'])){
                 //редирект на главную страницу, ползователь существует
+
+                $_SESSION[session_id()] = $_REQUEST['name'];
                 
-                $_SESSION['user'] = $_REQUEST['name'];
-    
+                
                 header("Location: main");
-            }  
+            } else {
+                $text_info = "некорректный логин и/или пароль";
+            }
             
         }
             

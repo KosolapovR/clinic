@@ -9,8 +9,12 @@ define("CONTROLLERS", ROOT . "/controllers");
 define("CONFIG", ROOT . "/config");
 define("CLASSES", ROOT . "/classes");
 
+//Database:
+
 define("DSN", "mysql:host=blog.loc;dbname=blog");
 define("DB_USER", "root");
 define("DB_PASS", "");
-        require_once  CORE . '/DBconnect.php';
+require_once  CORE . '/DBconnect.php';
+
+define("SECRET_WORD", "akuna matata");
 

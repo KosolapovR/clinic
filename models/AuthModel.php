@@ -1,23 +1,14 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+namespace model;
 
-/**
- * Description of AuthModel
- *
- * @author Роман
- */
 class AuthModel {
-    public static function addNewUser($login, $password, $phone, $email){
+    public static function addNewUser($login, $password, $phone, $email)
+    {
       if(isset($_REQUEST['registration'])){
             require CORE . '/DBconnect.php';
             $date = Date("d-m-y");
-
-           
+    
             //добавление в таблицу Users
             $stmtPhone = $pdo->prepare("INSERT INTO `users`(`login`, `phone`, `email`, `date`) VALUES (:login, :phone, :email, :date)");
              
@@ -31,14 +22,48 @@ class AuthModel {
             
             //Добавление в таблицу passwords
             $stmt = $pdo->prepare("INSERT INTO `passwords`(`user`, `pass`) VALUES (:login, :password)");
+            $pass = md5($password . SECRET_WORD);
             $stmt->execute(array(
                 ':login' => $login,
-                ':password' => $password
+                ':password' => $pass
             ));
-            
-            
-            
+   
         } 
         return true;
+    }
+    
+    public static function verifyEmail($email, $login)
+    {       
+    $transport = (new \Swift_SmtpTransport('smtp.mail.ru', 465, 'ssl'))
+    ->setUsername('Kosolapov-r@bk.ru')
+    ->setPassword('romul1991')
+    ;
+    $mailer = new \Swift_Mailer($transport);
+    $code = urlencode(self::generateCode());
+    $link = "http://blog.loc/verify?code=$code&login_id=$login";
+    $message = (new \Swift_Message("Подтверждение регистрации"))
+    ->setFrom(['Kosolapov-r@bk.ru' => 'Roman'])
+    ->setTo($email)
+    ->addPart("<p>Здравсвуйте $login,  в течении 1 дня вы должны пройти по указанной сслыке "
+          . "<a href='$link'>$link</a>, иначе ваш аккаунт не будет авторизирован.</p>", 'text/html')  
+    ;
+    // Send the message
+    if($result = $mailer->send($message)){
+        return $code;
+    }
+    
+    }
+    
+    private static function generateCode()
+    {    
+        $code = "";
+        for($i = 1; $i <= 16; $i++){  
+            $rand = mt_rand(32,122);
+            while($rand == 60){
+                $rand = mt_rand(32,122);  
+            }
+            $code .= chr($rand);
+        }
+        return $code;
     }
 }

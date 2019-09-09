@@ -1,12 +1,11 @@
 <?php
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");//HTTP/1.1
+
 class ProfileController {
      public function actionIndex(){ 
          
-        if (isset($_SESSION['user'])){
+        if (isset($_SESSION[session_id()])){
             
-            require_once MODELS . "/ProfileModel.php";
-            $model = new ProfileModel($_SESSION['user']);
+            $model = new model\ProfileModel($_SESSION[session_id()]);
             include_once VIEWS  . "/profile.php";  
         } else {
             echo "Сессия умерла";

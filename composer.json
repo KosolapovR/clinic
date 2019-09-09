@@ -1,0 +1,12 @@
+{ 
+    "autoload": {
+        "psr-4": {
+            "model\\": "models/",
+            "lib\\": "classes/",
+            "otherlibs\\": "vendor/otherlibs/"
+        }
+    },
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0"
+    }
+}

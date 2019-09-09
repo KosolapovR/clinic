@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Expires" content="Wed, 26 Feb 1999 08:21:57 GMT">
-    <title>Запись онлайн</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/profile.css">
-    <script src="/js/jQuery.js"></script>
-    <script src="/js/popUp.js"></script>
-    <script src="/js/ajax_update.js"></script>
-</head>
-<body>
-  <header>
-      <nav>
-         <div class="nav_left">
-             <div class="logo">logo</div>
-             <div class="sign_up"><a href="">Запись онлайн</a></div>
-         </div>
-          <ul class="nav_right">
-              
-              <li><a href="">контакты</a></li>
-              <li><a href="">новости</a></li>
-              <li><a href="">наши сотрудники</a></li>
-              <?php if(isset($_SESSION['user'])):?>
-              <li><a href="profile">личный кабинет <?=$_SESSION['user']?></a></li>
-              <li><a href="exit">выйти</a></li>
-              <?php else: ?>
-              <li><a href="login">войти</a></li>
-              <?php endif; ?>
-          </ul>
-      </nav>
-  </header>
+<?php require_once VIEWS . '/header.php'; ?>
   <div class="whrapper">
       <section>
           <div id="hidden_block">
@@ -66,32 +33,33 @@
                       <td>Логин:</td>
                       <td><?=$model->user->getLogin()?></td>
                   </tr>
-                  <tr id="pass" class="row">
-                      <td>Пароль:</td>
-                      <td><?=$model->user->getPass()?></td>
-                  </tr>
                   <tr id="name" class="row">
                       <td>Имя:</td>
-                      <td><?=$model->user->getName()?></td>
+                       <td><input type="text" name="Name" value="<?=$model->user->getName()?>"></td>
                   </tr>
                   <tr id="surname" class="row">
                       <td>Фамилия:</td>
-                      <td><?=$model->user->getSurname()?></td>
+                      <td><input type="text" name="Surname" value="<?=$model->user->getSurname()?>"></td>
                   </tr>
                   <tr id="birthday" class="row">
                       <td>День рождения:</td>
-                      <td><?=$model->user->getBDay()?></td>
+                      <td><input type="text" name="BDay" value="<?=$model->user->getBDay()?>"></td>
                   </tr>
                   <tr id="tel" class="row">
                       <td>Телефон:</td>
-                      <td><input type="text" name="telephone" value="<?=$model->user->getPhone()?>"></td>
+                      <td><input type="text" name="Phone" value="<?=$model->user->getPhone()?>"></td>
                   </tr>
                   <tr id="email" class="row">
                       <td>Почта:</td>
-                      <td><?=$model->user->getEmail()?></td>
-                  </tr>
+                      <td><input type="text" name="Email" value="<?=$model->user->getEmail()?>"></td>
+                  </tr>    
               </table>
+              
+                          <label id="changeInfoLabel" for="changeData">Сохранить</label>
+                          <input type="submit" id="changeData" value="Отправить">
+                       
               </form>
           </div>
       </section>
   </div>
+ <?php require_once VIEWS . '/footer.php'; ?>

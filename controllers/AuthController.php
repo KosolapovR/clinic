@@ -18,21 +18,25 @@ class AuthController {
         if(isset($_REQUEST['registration'])){
             
             //Занят ли Логин
-            include_once MODELS . "/LoginModel.php";
-            if(LoginModel::userExists($_REQUEST['name'])){ 
+           
+            if(model\LoginModel::userExists($_REQUEST['name'])){ 
             //сохранение в переменную информационной строки
              $text_info = "<h4 class=\"text_info\">этот логин уже занят</h4>";
              include_once VIEWS . "/auth.php";
         } else {
             //Если Логин не занят, проводим регистрацию
-            include_once MODELS . "/AuthModel.php";
+            //include_once MODELS . "/AuthModel.php";
             //проверка на заполненность всех полей
             if($_REQUEST['name'] && $_REQUEST['pass'] && $_REQUEST['tel'] && $_REQUEST['email']){
-                if (AuthModel::addNewUser($_REQUEST['name'], $_REQUEST['pass'], $_REQUEST['tel'], $_REQUEST['email'])){
+                if (model\AuthModel::addNewUser($_REQUEST['name'], $_REQUEST['pass'], $_REQUEST['tel'], $_REQUEST['email'])){
                     
-                    require_once CLASSES . "/Users.php";
-                    $cur_user = new Users($_REQUEST['name'], $_REQUEST['pass'], $_REQUEST['tel'], $_REQUEST['email']);
+                    
+                    
+                    $cur_user = new lib\Users($_REQUEST['name'], $_REQUEST['pass'], $_REQUEST['tel'], $_REQUEST['email']);
+                    $code = model\AuthModel::verifyEmail($_REQUEST['email'], $_REQUEST['name']);
+                    $cur_user->setVerifyCode($code);
                     header("Location: login");            
+                    //exit();
                 }
             } else {
                 //сохранение в переменную информационной строки
