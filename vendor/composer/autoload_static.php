@@ -27,6 +27,10 @@ class ComposerStaticInitddb4b7bd33bf0cba9a75f3f6dc3bb7f8
         array (
             'lib\\' => 4,
         ),
+        'e' => 
+        array (
+            'exceptions\\' => 11,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php72\\' => 23,
@@ -47,7 +51,7 @@ class ComposerStaticInitddb4b7bd33bf0cba9a75f3f6dc3bb7f8
     public static $prefixDirsPsr4 = array (
         'otherlibs\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/',
+            0 => __DIR__ . '/..' . '/otherlibs',
         ),
         'model\\' => 
         array (
@@ -56,6 +60,10 @@ class ComposerStaticInitddb4b7bd33bf0cba9a75f3f6dc3bb7f8
         'lib\\' => 
         array (
             0 => __DIR__ . '/../..' . '/classes',
+        ),
+        'exceptions\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/classes/exceptions',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (

@@ -6,16 +6,13 @@ header('Pragma: no-cache');
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
+// инициализируем константы путей, БД ...
 define("ROOT", dirname(__FILE__));
-
 require_once  ROOT . '/config/configuration.php';
 require_once  'vendor/autoload.php';
 
-
-require_once  CORE . '/Router.php';
-
-
-    
+//запускаем роутер
+require_once  CORE . '/Router.php';   
 Router::run();
 
 

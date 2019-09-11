@@ -6,10 +6,16 @@ class AuthModel {
     public static function addNewUser($login, $password, $phone, $email)
     {
       if(isset($_REQUEST['registration'])){
+            
             require CORE . '/DBconnect.php';
             $date = Date("d-m-y");
     
             //добавление в таблицу Users
+        try {
+            if(!isset($login) || !isset($password) || !isset($phone) || !isset($email)){
+                throw new \exceptions\CannotAddToDBException();
+                die();
+            }    
             $stmtPhone = $pdo->prepare("INSERT INTO `users`(`login`, `phone`, `email`, `date`) VALUES (:login, :phone, :email, :date)");
              
            
@@ -19,15 +25,24 @@ class AuthModel {
                 ':email' => $email,
                 ':date' => $date
             ));            
+        } catch (\exceptions\CannotAddToDBException $ex) {
+                $ex->showMsg();
+                return false;
+        }   
+            
             
             //Добавление в таблицу passwords
-            $stmt = $pdo->prepare("INSERT INTO `passwords`(`user`, `pass`) VALUES (:login, :password)");
-            $pass = md5($password . SECRET_WORD);
-            $stmt->execute(array(
+            try {
+                $stmt = $pdo->prepare("INSERT INTO `passwords`(`user`, `pass`) VALUES (:login, :password)");
+                $pass = md5($password . SECRET_WORD);
+                $stmt->execute(array(
                 ':login' => $login,
                 ':password' => $pass
             ));
-   
+            } catch (\exceptions\CannotAddToDBException $ex) {
+                $ex->showMsg();
+                return false;
+            }
         } 
         return true;
     }

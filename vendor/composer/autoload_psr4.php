@@ -6,9 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'otherlibs\\' => array($baseDir . '/'),
+    'otherlibs\\' => array($vendorDir . '/otherlibs'),
     'model\\' => array($baseDir . '/models'),
     'lib\\' => array($baseDir . '/classes'),
+    'exceptions\\' => array($baseDir . '/classes/exceptions'),
     'Symfony\\Polyfill\\Php72\\' => array($vendorDir . '/symfony/polyfill-php72'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Intl\\Idn\\' => array($vendorDir . '/symfony/polyfill-intl-idn'),
