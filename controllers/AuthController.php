@@ -43,7 +43,7 @@ class AuthController {
 
                         $cur_user = new lib\Users($_REQUEST['name'], $_REQUEST['pass'], $_REQUEST['tel'], $_REQUEST['email']);
                         $code = model\AuthModel::verifyEmail($_REQUEST['email'], $_REQUEST['name']);
-                        $cur_user->setVerifyCode($code);
+                        $cur_user->setVerifyCode($code);  
                         header("Location: login");            
                         }
                 }

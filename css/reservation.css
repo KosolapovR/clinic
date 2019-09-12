@@ -5,6 +5,57 @@ main{
 ul>li{
     list-style: none;
 }
+
+.show_popUp{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background: #EEE;
+    border-radius: 10px;
+    left: 32%;
+    top: 20%;
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+   
+  
+}
+.hidden_popUp{
+    display: none;
+}
+
+.show_popUp .buttons{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.show_popUp .buttons button{
+    width: 80px;
+    height: 30px;
+}
+
+.buttons #yes{
+    background: green;
+}
+.buttons #no{
+    background: red;
+     cursor: pointer;
+}
+
 main .whrapper{
     margin: 0 auto;
     width: 100%;
@@ -13,6 +64,37 @@ main .whrapper{
     height: 60vh;
 }
 
+main .whrapper .times{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    height: 260px;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+main .whrapper .times p{
+    margin: 5px;
+    color: cadetblue;
+    cursor: pointer;
+}
+
+main .whrapper .times p:hover{
+    color: blue;
+     cursor: progress;
+    
+}
+.times:hover{
+    cursor: pointer;
+}
 .category{
     display: -webkit-flex;
     display: -moz-flex;

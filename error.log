@@ -1,0 +1,199 @@
+Не удалось добавить в баззу данных пользователяНе удалось добавить в базу данных пользователяНе удалось добавить в базу данных пользователя \nНе удалось добавить в базу данных пользователя \r\nНе удалось добавить в базу данных пользователя \r\nНе удалось добавить в базу romul1991данных пользователя \r\n[10-Sep-2019 22:05:10 Europe/Moscow] PHP Notice:  Undefined index: names in D:\OSPanel\domains\blog.loc\controllers\AuthController.php on line 42
+Не удалось добавить в базу romul1991 данных пользователя[11-Sep-2019 09:10:25 Europe/Moscow] PHP Notice:  Undefined index: names in D:\OSPanel\domains\blog.loc\controllers\AuthController.php on line 42
+Не удалось добавить в базу romul1991 данных пользователя[11-Sep-2019 09:18:05 Europe/Moscow] PHP Notice:  Undefined index: name in D:\OSPanel\domains\blog.loc\controllers\LoginController.php on line 22
+[11-Sep-2019 09:18:05 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\controllers\LoginController.php:22) in D:\OSPanel\domains\blog.loc\controllers\LoginController.php on line 25
+[11-Sep-2019 09:40:39 Europe/Moscow] PHP Notice:  Undefined index: fbsifd8gpjrqou947njlgthivo61t8sm in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 09:40:47 Europe/Moscow] PHP Notice:  Undefined index: fbsifd8gpjrqou947njlgthivo61t8sm in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 09:41:36 Europe/Moscow] PHP Notice:  Undefined index: fbsifd8gpjrqou947njlgthivo61t8sm in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 09:41:45 Europe/Moscow] PHP Notice:  Undefined index: fbsifd8gpjrqou947njlgthivo61t8sm in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 09:41:47 Europe/Moscow] PHP Notice:  Undefined index: fbsifd8gpjrqou947njlgthivo61t8sm in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 09:41:51 Europe/Moscow] PHP Notice:  Undefined index: fbsifd8gpjrqou947njlgthivo61t8sm in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 09:41:56 Europe/Moscow] PHP Notice:  Undefined index: fbsifd8gpjrqou947njlgthivo61t8sm in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 09:41:59 Europe/Moscow] PHP Notice:  Undefined index: fbsifd8gpjrqou947njlgthivo61t8sm in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 09:42:01 Europe/Moscow] PHP Notice:  Undefined index: fbsifd8gpjrqou947njlgthivo61t8sm in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 09:46:44 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:46:44 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:46:45 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\login.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:46:45 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:46:55 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\login.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:46:55 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:46:55 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:46:59 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:46:59 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:01 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:01 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:02 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:02 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:02 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:02 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:02 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:02 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:03 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:03 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:04 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:04 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 09:47:59 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\index.php:11) in D:\OSPanel\domains\blog.loc\controllers\LoginController.php on line 32
+[11-Sep-2019 09:47:59 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\index.php:11) in D:\OSPanel\domains\blog.loc\controllers\LoginController.php on line 36
+[11-Sep-2019 09:48:09 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\login.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:09 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:09 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:15 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:16 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:17 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:17 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:18 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:18 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:19 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:19 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:19 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:19 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:20 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:20 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:21 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:21 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:21 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:22 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:22 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:22 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:22 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:22 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:22 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\header.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 09:48:22 Europe/Moscow] PHP Warning:  Cannot modify header information - headers already sent by (output started at D:\OSPanel\domains\blog.loc\views\404.php:1) in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 10:06:23 Europe/Moscow] PHP Notice:  Undefined index: l13c74ge3g1pc4f5tgdtl6qe2t63s8bb in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 10:07:46 Europe/Moscow] PHP Notice:  Undefined index: l13c74ge3g1pc4f5tgdtl6qe2t63s8bb in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[11-Sep-2019 11:18:48 Europe/Moscow] PHP Notice:  Undefined variable: date in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:18:48 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT `doctor`...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:18:48 Europe/Moscow] PHP Notice:  Undefined variable: date in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:18:48 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT `doctor`...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:19:31 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:19:31 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:19:38 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:19:38 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:19:40 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:19:41 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:20:18 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:20:18 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:21:16 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:21:16 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:22:23 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:22:23 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:22:24 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:22:24 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:22:27 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:22:27 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:23:06 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:23:06 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:24:14 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:24:14 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:24:31 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:24:31 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:24:36 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:24:36 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:24:37 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:24:37 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:24:37 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:24:37 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stomatolog' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:25:09 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stoma1' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:25:09 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stoma1' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:25:09 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stoma1' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:25:09 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'stoma1' in 'where clause' in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): PDO->query('SELECT * FROM `...')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[11-Sep-2019 11:27:36 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[11-Sep-2019 11:27:36 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
+[12-Sep-2019 10:51:52 Europe/Moscow] PHP Parse error:  Invalid numeric literal in D:\OSPanel\domains\blog.loc\views\reservation.php on line 4
+[12-Sep-2019 13:16:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\OSPanel\domains\blog.loc\views\reservation.php on line 30

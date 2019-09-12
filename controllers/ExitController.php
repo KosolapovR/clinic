@@ -14,7 +14,6 @@
 class ExitController {
     public function actionIndex()
     {
-        session_unset();
-        include_once ROOT . "/views/main.php";
+        session_unset();      
     }
 }

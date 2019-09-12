@@ -13,6 +13,7 @@ class AuthModel {
             //добавление в таблицу Users
         try {
             if(!isset($login) || !isset($password) || !isset($phone) || !isset($email)){
+                error_log('Не удалось добавить в базу ' . $password . ' данных пользователя', 3, ROOT . '/error.log');
                 throw new \exceptions\CannotAddToDBException();
                 die();
             }    
