@@ -76,6 +76,7 @@ footer {
     text-align: center; }
 
 main {
+    height: auto;
   margin: 0 auto;
   max-width: 1360px;
   display: -moz-flex;

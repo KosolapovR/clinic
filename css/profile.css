@@ -9,14 +9,14 @@ body{
     max-width: 960px;
     
 }
-.whrapper>section{
+.whrapper>#main_info{
     margin-top: 20px;
     width: 100%;
     height: auto;
     display: grid;
     grid-template: 1fr/ 1fr 2fr;
     grid-gap: 20px;
-margin-bottom: 137px;
+margin-bottom: 10px;
     
 }
 #hidden_block{
@@ -141,7 +141,7 @@ margin-bottom: 137px;
 
 
 .whrapper section .info_container{
-    background: brown;
+   
     border-radius: 10px;
     border: 1px solid #E3E4E8;
     background: #FFFFFF;
@@ -196,4 +196,36 @@ table .row td:last-child:hover{
     color: #23619A;
     padding: 5px 25px;
     cursor: pointer;
+}
+#notes_whrapper{
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    background: #fff;
+    border: 1px solid #E3E4E8;
+    margin-bottom: 10px;
+}
+#notes_whrapper .top_title{
+    height: 30px;
+    width: 100%;
+    background: #c3c8d1;
+    color: #117;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#notes th{
+    background: #aaf;
+    border-radius: 5px;
+}
+#notes td{
+    background: #fff;
+    border-radius: 5px;
+     border: 1px solid #E3E4E8;
+    text-align: center;
 }

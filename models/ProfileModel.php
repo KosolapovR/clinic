@@ -4,17 +4,18 @@ namespace model;
 
 class ProfileModel {
     public $user;
-    public function __construct(string $user) {
-        
-            $this->user = new \lib\Users($user);
-            //debugger($_REQUEST);
+    public function __construct(string $user, \PDO $pdo) {
+            
+        $this->user = new \lib\Users($user);
+           
+            //динамическое заполнение полей профиля и сохранение
             foreach ($_REQUEST as $key => $val){
                 $metod = "set" . $key;
                 if (method_exists($this->user, $metod)){       
                     $this->user->$metod($val);
                 }
             }
-             //header("Location: profile");
+            // header("Location: profile");
         
         
          
@@ -26,10 +27,13 @@ class ProfileModel {
             
             header("Location: profile");
         } 
-       
     }
+    public function showNotes(\lib\Users $user, \PDO $pdo){
+        return \lib\Queue::getNotesByUser($user, $pdo);
+    }
+
     public function showLogin() {
         return $this->user->getLogin();
     }
-  
+    
 }

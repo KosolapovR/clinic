@@ -12,26 +12,21 @@
  * @author Роман
  */
 class NewsController {
-    public function __construct() {
-        echo "Этот класс: " . __CLASS__ . "<br>";
+    private $model;
+    private $user;
+    private $news;
+    public function __construct() { 
+        $this->user = new lib\Users($_SESSION[session_id()]);
     }
     
-    public function actionIndex()
+    public function actionIndex($pdo)
     {
-        echo "вызван метод " . __METHOD__ . "<br>";
-        $dsn = 'mysql:host=localhost;dbname=test';
-        $user = 'root';
-        $pass = '';
+       
+        $this->model = new model\NewsModel($this->user, $pdo);
+        $this->news = $this->model->getNews();
         
-        $pdo = new PDO('mysql:host=blog.loc;dbname=blog', $user, $pass);
-        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-        $stmt = $pdo->query("SELECT * FROM news");
-        //$row = $stmt->fetchAll();
-        while ($row = $stmt->fetch()) {
-            debugger($row);
-        }
+        require_once VIEWS . '/news.php';
     }
-    
     public function actionView()
     {
         echo "вызван метод " . __METHOD__ . "<br>";

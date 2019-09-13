@@ -15,5 +15,5 @@ require_once  ROOT . '/config/configuration.php';
 
 //запускаем роутер
 require_once  CORE . '/Router.php';   
-Router::run();
+Router::run($pdo);
 

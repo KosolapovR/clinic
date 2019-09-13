@@ -1,0 +1,16 @@
+<?php
+
+namespace model;
+
+class NewsModel {
+    private $user;
+    private $pdo;
+    public function __construct(\lib\Users $user, \PDO $pdo) {
+        $this->user = $user;
+        $this->pdo = $pdo;
+    }
+    public function getNews(int $quantity = 5):array {
+        $stmt = $this->pdo->query("SELECT * FROM `news` LIMIT {$quantity}");
+        return $stmt->fetchAll();
+    }
+}

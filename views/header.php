@@ -10,6 +10,12 @@
     <script src="/js/popUp.js"></script>
     <script src="/js/ajax_update.js"></script>
     <?php endif; ?>
+    <?php if($_SERVER['REQUEST_URI'] == '/news'):?>
+    <link rel="stylesheet" href="/css/news.css">
+    <script src="/js/jQuery.js"></script>
+    <script src="/js/popUp.js"></script>
+    <script src="/js/ajax_update.js"></script>
+    <?php endif; ?>
      <?php if(preg_match("/reservation/", $_SERVER['REQUEST_URI'])):?>
     <link rel="stylesheet" href="/css/reservation.css">
     <script src="/js/jQuery.js"></script>
@@ -22,7 +28,11 @@
          <div class="nav_left">
              <div class="logo">logo</div>
               <?php if(!preg_match("/reservation/", $_SERVER['REQUEST_URI'])):?>
-              <div class="sign_up"><a href="reservation">Запись онлайн</a></div>
+                  <?php if(isset($_SESSION[session_id()])):?>
+                      <div class="sign_up"><a href="reservation">Запись онлайн</a></div>
+                  <?php else: ?>
+                       <div class="sign_up"><a href="login">Запись онлайн</a></div>
+                  <?php endif; ?>
               <?php endif; ?>
              
          </div>
@@ -31,10 +41,16 @@
               <li><a href="/main">главная</a></li>
               <?php endif; ?>
               <li><a href="">контакты</a></li>
-              <li><a href="">новости</a></li>
+              <?php if($_SERVER['REQUEST_URI'] != '/news'):?>
+              <li><a href="/news">новости</a></li>
+              <?php endif; ?>
               <li><a href="">наши сотрудники</a></li>
+              <?php if($_SERVER['REQUEST_URI'] != '/profile'):?>
               <?php if(isset($_SESSION[session_id()])):?>
-              <li><a href="/profile">личный кабинет <?=$_SESSION[session_id()]?></a></li>
+              <li><a href="/profile">личный кабинет <p id="login"><?=$_SESSION[session_id()]?></p></a></li>
+              <?php endif; ?>
+              <?php endif; ?>
+              <?php if(isset($_SESSION[session_id()])):?>
               <li><a href="/exit">выйти</a></li>
               <?php else: ?>
               <li><a href="/login">войти</a></li>

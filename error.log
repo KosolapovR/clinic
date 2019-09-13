@@ -197,3 +197,308 @@ Stack trace:
 [11-Sep-2019 11:27:36 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\index.php on line 21
 [12-Sep-2019 10:51:52 Europe/Moscow] PHP Parse error:  Invalid numeric literal in D:\OSPanel\domains\blog.loc\views\reservation.php on line 4
 [12-Sep-2019 13:16:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in D:\OSPanel\domains\blog.loc\views\reservation.php on line 30
+[13-Sep-2019 17:09:43 Europe/Moscow] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 5
+[13-Sep-2019 17:10:06 Europe/Moscow] PHP Fatal error:  Uncaught Error: Using $this when not in object context in D:\OSPanel\domains\blog.loc\models\ProfileModel.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32
+[13-Sep-2019 17:11:04 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 24
+[13-Sep-2019 17:11:04 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\OSPanel\domains\blog.loc\classes\Queue.php:24
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 24
+[13-Sep-2019 17:14:06 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\PDO' not found in D:\OSPanel\domains\blog.loc\classes\Queue.php:5
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\vendor\composer\ClassLoader.php(444): include()
+#1 D:\OSPanel\domains\blog.loc\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\OSPanel\\doma...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('lib\\Queue')
+#3 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): spl_autoload_call('lib\\Queue')
+#4 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#5 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#6 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#7 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 5
+[13-Sep-2019 17:14:45 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 24
+[13-Sep-2019 17:14:45 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\OSPanel\domains\blog.loc\classes\Queue.php:24
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 24
+[13-Sep-2019 17:15:02 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\PDO' not found in D:\OSPanel\domains\blog.loc\classes\Queue.php:5
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\vendor\composer\ClassLoader.php(444): include()
+#1 D:\OSPanel\domains\blog.loc\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\OSPanel\\doma...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('lib\\Queue')
+#3 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): spl_autoload_call('lib\\Queue')
+#4 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#5 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#6 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#7 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 5
+[13-Sep-2019 17:15:24 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 34
+[13-Sep-2019 17:15:24 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\OSPanel\domains\blog.loc\classes\Queue.php:34
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 34
+[13-Sep-2019 17:17:14 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 23
+[13-Sep-2019 17:17:14 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\OSPanel\domains\blog.loc\classes\Queue.php:23
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 23
+[13-Sep-2019 17:17:28 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 10
+[13-Sep-2019 17:17:28 Europe/Moscow] PHP Notice:  Accessing static property model\ProfileModel::$user as non static in D:\OSPanel\domains\blog.loc\views\profile.php on line 25
+[13-Sep-2019 17:17:28 Europe/Moscow] PHP Notice:  Undefined property: model\ProfileModel::$user in D:\OSPanel\domains\blog.loc\views\profile.php on line 25
+[13-Sep-2019 17:17:28 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function getImgPath() on null in D:\OSPanel\domains\blog.loc\views\profile.php:25
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(11): include_once()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\views\profile.php on line 25
+[13-Sep-2019 17:17:47 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 10
+[13-Sep-2019 17:17:47 Europe/Moscow] PHP Notice:  Accessing static property model\ProfileModel::$user as non static in D:\OSPanel\domains\blog.loc\views\profile.php on line 25
+[13-Sep-2019 17:17:47 Europe/Moscow] PHP Notice:  Undefined property: model\ProfileModel::$user in D:\OSPanel\domains\blog.loc\views\profile.php on line 25
+[13-Sep-2019 17:17:47 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function getImgPath() on null in D:\OSPanel\domains\blog.loc\views\profile.php:25
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(11): include_once()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\views\profile.php on line 25
+[13-Sep-2019 17:18:24 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 10
+[13-Sep-2019 17:18:24 Europe/Moscow] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ',' or ';' in D:\OSPanel\domains\blog.loc\views\profile.php on line 25
+[13-Sep-2019 17:19:13 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 10
+[13-Sep-2019 17:19:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Access to undeclared static property: ProfileController::$user in D:\OSPanel\domains\blog.loc\views\profile.php:25
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(11): include_once()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\views\profile.php on line 25
+[13-Sep-2019 17:20:03 Europe/Moscow] PHP Fatal error:  Uncaught Error: Access to undeclared static property: model\ProfileModel::$user in D:\OSPanel\domains\blog.loc\models\ProfileModel.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32
+[13-Sep-2019 17:20:25 Europe/Moscow] PHP Fatal error:  Uncaught Error: Using $this when not in object context in D:\OSPanel\domains\blog.loc\models\ProfileModel.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32
+[13-Sep-2019 17:20:26 Europe/Moscow] PHP Fatal error:  Uncaught Error: Using $this when not in object context in D:\OSPanel\domains\blog.loc\models\ProfileModel.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32
+[13-Sep-2019 17:20:53 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method model\ProfileModel::showNotes() in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php:9
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex()
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 9
+[13-Sep-2019 17:21:04 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 10
+[13-Sep-2019 17:21:38 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 10
+[13-Sep-2019 17:22:33 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\core\Router.php on line 34
+[13-Sep-2019 17:22:33 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 10
+[13-Sep-2019 17:22:57 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 10
+[13-Sep-2019 17:23:24 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 10
+[13-Sep-2019 17:24:09 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to model\ProfileModel::__construct() must be an instance of model\PDO, instance of PDO given, called in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 8 and defined in D:\OSPanel\domains\blog.loc\models\ProfileModel.php:7
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(8): model\ProfileModel->__construct('root', Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 7
+[13-Sep-2019 17:24:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Using $this when not in object context in D:\OSPanel\domains\blog.loc\models\ProfileModel.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32
+[13-Sep-2019 17:24:53 Europe/Moscow] PHP Fatal error:  Uncaught Error: Using $this when not in object context in D:\OSPanel\domains\blog.loc\models\ProfileModel.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel::showNotes()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32
+[13-Sep-2019 17:26:08 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 23
+[13-Sep-2019 17:26:08 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\OSPanel\domains\blog.loc\classes\Queue.php:23
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel->showNotes()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 23
+[13-Sep-2019 17:26:53 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 23
+[13-Sep-2019 17:26:53 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\OSPanel\domains\blog.loc\classes\Queue.php:23
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel->showNotes(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 23
+[13-Sep-2019 17:27:08 Europe/Moscow] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ')' in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:27:20 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'PDO' (T_STRING), expecting ')' in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:27:29 Europe/Moscow] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ')' in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:27:48 Europe/Moscow] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ')' in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:27:56 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'PDO' (T_STRING), expecting ')' in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:28:00 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$pdo' (T_VARIABLE), expecting ')' in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:28:05 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function lib\Queue::getNotesByUser(), 1 passed in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32 and exactly 2 expected in D:\OSPanel\domains\blog.loc\classes\Queue.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel->showNotes(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:28:39 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function lib\Queue::getNotesByUser(), 1 passed in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32 and exactly 2 expected in D:\OSPanel\domains\blog.loc\classes\Queue.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(9): model\ProfileModel->showNotes(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:30:29 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function lib\Queue::getNotesByUser(), 1 passed in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32 and exactly 2 expected in D:\OSPanel\domains\blog.loc\classes\Queue.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(10): model\ProfileModel->showNotes(Object(lib\Users), Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:30:30 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function lib\Queue::getNotesByUser(), 1 passed in D:\OSPanel\domains\blog.loc\models\ProfileModel.php on line 32 and exactly 2 expected in D:\OSPanel\domains\blog.loc\classes\Queue.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\ProfileModel.php(32): lib\Queue::getNotesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\controllers\ProfileController.php(10): model\ProfileModel->showNotes(Object(lib\Users), Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): ProfileController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 22
+[13-Sep-2019 17:31:06 Europe/Moscow] PHP Recoverable fatal error:  Object of class lib\Users could not be converted to string in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 23
+[13-Sep-2019 17:33:41 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')', expecting ']' in D:\OSPanel\domains\blog.loc\controllers\ProfileController.php on line 11
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:36:52 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 17:37:15 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\views\profile.php on line 75
+[13-Sep-2019 20:42:50 Europe/Moscow] PHP Notice:  Undefined index: l13c74ge3g1pc4f5tgdtl6qe2t63s8bb in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[13-Sep-2019 20:43:02 Europe/Moscow] PHP Notice:  Undefined index: l13c74ge3g1pc4f5tgdtl6qe2t63s8bb in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[13-Sep-2019 20:43:03 Europe/Moscow] PHP Notice:  Undefined index: l13c74ge3g1pc4f5tgdtl6qe2t63s8bb in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[13-Sep-2019 20:43:11 Europe/Moscow] PHP Notice:  Undefined index: l13c74ge3g1pc4f5tgdtl6qe2t63s8bb in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[13-Sep-2019 20:43:12 Europe/Moscow] PHP Notice:  Undefined index: l13c74ge3g1pc4f5tgdtl6qe2t63s8bb in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[13-Sep-2019 20:43:12 Europe/Moscow] PHP Notice:  Undefined index: l13c74ge3g1pc4f5tgdtl6qe2t63s8bb in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[13-Sep-2019 20:43:23 Europe/Moscow] PHP Notice:  Undefined index: l13c74ge3g1pc4f5tgdtl6qe2t63s8bb in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 19
+[13-Sep-2019 20:52:17 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 36
+[13-Sep-2019 20:52:20 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 36
+[13-Sep-2019 20:52:30 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 36
+[13-Sep-2019 20:58:43 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 21
+[13-Sep-2019 20:59:24 Europe/Moscow] PHP Notice:  Undefined variable: user in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 21
+[13-Sep-2019 20:59:24 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be of the type string, null given, called in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 21 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:7
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(21): model\NewsModel->__construct(NULL, Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 7
+[13-Sep-2019 21:00:50 Europe/Moscow] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:18
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(32): NewsController->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 18
+[13-Sep-2019 21:01:24 Europe/Moscow] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:18
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(32): NewsController->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 18
+[13-Sep-2019 21:01:25 Europe/Moscow] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:18
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(32): NewsController->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 18
+[13-Sep-2019 21:01:25 Europe/Moscow] PHP Fatal error:  Uncaught Error: Function name must be a string in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:18
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(32): NewsController->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 18
+[13-Sep-2019 21:24:57 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\OSPanel\domains\blog.loc\views\header.php on line 53
+[13-Sep-2019 21:24:57 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in D:\OSPanel\domains\blog.loc\views\header.php on line 53
+[13-Sep-2019 21:35:17 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 11
+[13-Sep-2019 21:35:17 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\OSPanel\domains\blog.loc\models\NewsModel.php:11
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->getNews()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 11
+[13-Sep-2019 21:35:18 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 11
+[13-Sep-2019 21:35:18 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\OSPanel\domains\blog.loc\models\NewsModel.php:11
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->getNews()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 11
+[13-Sep-2019 22:01:54 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''5'' at line 1 in D:\OSPanel\domains\blog.loc\models\NewsModel.php:13
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\NewsModel.php(13): PDO->query('SELECT * FROM `...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 13

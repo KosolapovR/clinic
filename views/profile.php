@@ -1,6 +1,6 @@
 <?php require_once VIEWS . '/header.php'; ?>
   <div class="whrapper">
-      <section>
+      <section id="main_info">
           <div id="hidden_block">
              <div class="top">
                 Загрузка новой фотографии
@@ -60,6 +60,25 @@
                        
               </form>
           </div>
+      </section>
+      <section id="notes_whrapper">
+          <div class="top_title">Мои текущие записи:</div>
+          <table id="notes">
+              <tr>
+                  <th>Дата</th>
+                  <th>Время</th>
+                  <th>Направление</th>
+                  <th>Доктор</th>
+              </tr>
+              <?php foreach ($notes as $col):?>
+              <tr>
+                  <td><?=$col['date']?></td>
+                  <td><?=$col['time']?></td>
+                  <td><?=$col['category']?></td>
+                  <td><?=$col['doctor']?></td>
+              </tr>
+              <?php endforeach;?>
+          </table>
       </section>
   </div>
  <?php require_once VIEWS . '/footer.php'; ?>

@@ -27,7 +27,7 @@ class Users {
     }
     public function getLogin(): string 
     {
-        return $_SESSION[session_id()];
+        return $this->login;
         
     }
     public function getPass(): string 

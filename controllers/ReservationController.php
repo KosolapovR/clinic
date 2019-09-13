@@ -24,13 +24,7 @@ class ReservationController {
         $uri = trim($_SERVER['REQUEST_URI'], "/");
         $segments = explode('/', $uri);
         ReservationController::$category = array_pop($segments);
-        
-        
-//        if (file_exists(VIEWS . '/reservation_' . $category . '.php')){
-//            require_once VIEWS . '/reservation_' . $category . '.php';
-//        } else {
-//            require_once VIEWS . '/reservation.php';   
-//        }
+       
         require_once VIEWS . '/reservation.php';
         
 }

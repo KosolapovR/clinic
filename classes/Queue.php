@@ -1,11 +1,5 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace lib;
 
 /**
@@ -25,6 +19,10 @@ class Queue
             return true;
         }
     }
+    public static function getNotesByUser(Users $user, \PDO $pdo){
+        $stmt = $pdo->query("SELECT * FROM `queue` WHERE `user`='{$user->getLogin()}'");
+        return $stmt->fetchAll();
+    }
     public static function getNotesByDate($date, $category){
         $buffer = [];
         $pdo = new \PDO(DSN, DB_USER, DB_PASS);
@@ -34,5 +32,15 @@ class Queue
         }
         sort($buffer);
         return $buffer; 
+    }
+    
+    public static function addQueue($date, $time, $category, Users $user, \PDO $pdo){
+        $login = $user->getLogin();
+        $statement = "INSERT INTO `queue`(`date`, `time`, `category`, `user`, `doctor`) VALUES ('$date', '{$time}', '{$category}', '{$login}', 'doctorTEST')";
+        $res = $pdo->query($statement);
+        if(!empty($res)){
+            return true;
+        }
+        return false;
     }
 }
