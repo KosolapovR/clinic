@@ -510,3 +510,162 @@ Stack trace:
 #3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
 #4 {main}
   thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 13
+[14-Sep-2019 19:25:53 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\classes\Users.php on line 36
+[14-Sep-2019 19:25:53 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in D:\OSPanel\domains\blog.loc\classes\Users.php:36
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 36
+[14-Sep-2019 19:26:46 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, object returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:27:09 Europe/Moscow] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:27:19 Europe/Moscow] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:27:26 Europe/Moscow] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:27:27 Europe/Moscow] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:27:34 Europe/Moscow] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:27:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:29:55 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, object returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:30:18 Europe/Moscow] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:30:19 Europe/Moscow] PHP Fatal error:  Uncaught Error: Cannot use object of type PDOStatement as array in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:30:46 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, array returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:30:47 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, array returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:30:56 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 19:30:56 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, null returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\header.php(51): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\views\news.php(1): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#3 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#4 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#5 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[14-Sep-2019 21:41:08 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of model\PDO, instance of PDO given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 20 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(20): model\MainModel->__construct(Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(32): MainController->__construct(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 17
+[14-Sep-2019 21:51:19 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'model\model\NewsModel' not found in D:\OSPanel\domains\blog.loc\models\MainModel.php:25
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->getNews()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(32): MainController->__construct(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 25
+[14-Sep-2019 21:51:43 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'NewsModel' not found in D:\OSPanel\domains\blog.loc\models\MainModel.php:25
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->getNews()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(32): MainController->__construct(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 25
+[14-Sep-2019 21:52:00 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 25
+[14-Sep-2019 21:52:00 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 25 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\MainModel.php(25): model\NewsModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(32): MainController->__construct(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[14-Sep-2019 21:52:25 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in D:\OSPanel\domains\blog.loc\views\main.php on line 25

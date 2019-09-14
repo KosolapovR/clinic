@@ -12,6 +12,7 @@ class Users {
     private $surname;
     private $img_path;
     private $pdo;
+    private $id;
 
     public function __construct($login, $password = null, $tel = null, $email = null) 
     {
@@ -28,6 +29,12 @@ class Users {
     public function getLogin(): string 
     {
         return $this->login;
+        
+    }
+    public function getID(): string 
+    {
+        $this->id = $this->pdo->query("SELECT `id` FROM `users` WHERE `login`='{$this->login}'")->fetch();
+        return $this->id['id'];
         
     }
     public function getPass(): string 

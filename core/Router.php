@@ -29,7 +29,7 @@ class Router {
 
                     if(file_exists($controller_path)){
                         require_once $controller_path;
-                        $controller_object = new $controller;
+                        $controller_object = new $controller($pdo);
                         if(method_exists($controller_object, $action)){ 
                             $controller_object->$action($pdo);
                         } 

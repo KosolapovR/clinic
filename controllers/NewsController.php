@@ -22,7 +22,7 @@ class NewsController {
     public function actionIndex($pdo)
     {
        
-        $this->model = new model\NewsModel($this->user, $pdo);
+        $this->model = new model\NewsModel($pdo);
         $this->news = $this->model->getNews();
         
         require_once VIEWS . '/news.php';

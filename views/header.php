@@ -13,8 +13,7 @@
     <?php if($_SERVER['REQUEST_URI'] == '/news'):?>
     <link rel="stylesheet" href="/css/news.css">
     <script src="/js/jQuery.js"></script>
-    <script src="/js/popUp.js"></script>
-    <script src="/js/ajax_update.js"></script>
+    <script src="/js/like.js"></script>
     <?php endif; ?>
      <?php if(preg_match("/reservation/", $_SERVER['REQUEST_URI'])):?>
     <link rel="stylesheet" href="/css/reservation.css">

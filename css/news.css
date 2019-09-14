@@ -18,6 +18,11 @@ main .whrapper{
 }
 .news-card_img{
     background: #191;
+    
+}
+.news-card_img img{
+    width: 100%;
+    height: 100%;
 }
 .news-card_description{
     padding: 20px;
@@ -45,6 +50,7 @@ main .whrapper{
     width: 15px;
     background: url(../img/icons/like.svg);
     cursor: pointer;
+    color: transparent;
 }
 .number_of_like{
     color: #D75A4A;

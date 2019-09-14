@@ -3,10 +3,10 @@
 namespace model;
 
 class NewsModel {
-    private $user;
+   // private $user;
     private $pdo;
-    public function __construct(\lib\Users $user, \PDO $pdo) {
-        $this->user = $user;
+    public function __construct(\PDO $pdo) {
+       // $this->user = $user;
         $this->pdo = $pdo;
     }
     public function getNews(int $quantity = 5):array {

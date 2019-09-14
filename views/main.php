@@ -3,14 +3,9 @@
     <aside class="left_bar">
       <h3>новости</h3>
       <ul class="news_list">
-          <li class="news_item">Lorem ipsum dolor sit.</li>
-          <li class="news_item">Lorem ipsum dolor.</li>
-          <li class="news_item">Lorem ipsum dolor sit amet.</li>
-          <li class="news_item">Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-          <li class="news_item">Lorem ipsum dolor sit.</li>
-          <li class="news_item">Lorem ipsum dolor.</li>
-          <li class="news_item">Lorem ipsum dolor sit amet.</li>
-          <li class="news_item">Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+         <?php foreach($this->news as $col):?>
+          <li class="news_item"><?=$col['subject']?></li>
+          <?php endforeach;?>
       </ul>
       </aside>
       <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quasi.</section>
