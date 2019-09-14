@@ -10,7 +10,7 @@ class NewsModel {
         $this->pdo = $pdo;
     }
     public function getNews(int $quantity = 5):array {
-        $stmt = $this->pdo->query("SELECT * FROM `news` LIMIT {$quantity}");
+        $stmt = $this->pdo->query("SELECT * FROM `news` ORDER BY `date` DESC LIMIT {$quantity}");
         return $stmt->fetchAll();
     }
 }

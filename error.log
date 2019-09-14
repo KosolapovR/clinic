@@ -502,3 +502,11 @@ Stack trace:
 #3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
 #4 {main}
   thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 13
+[14-Sep-2019 09:09:26 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC `date` LIMIT 5' at line 1 in D:\OSPanel\domains\blog.loc\models\NewsModel.php:13
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\NewsModel.php(13): PDO->query('SELECT * FROM `...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 13
