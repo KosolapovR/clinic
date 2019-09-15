@@ -10,12 +10,12 @@
     <script src="/js/popUp.js"></script>
     <script src="/js/ajax_update.js"></script>
     <?php endif; ?>
-    <?php if($_SERVER['REQUEST_URI'] == '/news'):?>
+    <?php if(preg_match("/news/", $_SERVER['REQUEST_URI'])):?>
     <link rel="stylesheet" href="/css/news.css">
     <script src="/js/jQuery.js"></script>
     <script src="/js/like.js"></script>
     <?php endif; ?>
-     <?php if(preg_match("/reservation/", $_SERVER['REQUEST_URI'])):?>
+    <?php if(preg_match("/reservation/", $_SERVER['REQUEST_URI'])):?>
     <link rel="stylesheet" href="/css/reservation.css">
     <script src="/js/jQuery.js"></script>
     <script src="/js/date.js"></script>
@@ -28,7 +28,7 @@
              <div class="logo">logo</div>
               <?php if(!preg_match("/reservation/", $_SERVER['REQUEST_URI'])):?>
                   <?php if(isset($_SESSION[session_id()])):?>
-                      <div class="sign_up"><a href="reservation">Запись онлайн</a></div>
+                      <div class="sign_up"><a href="http://blog.loc/reservation">Запись онлайн</a></div>
                   <?php else: ?>
                        <div class="sign_up"><a href="login">Запись онлайн</a></div>
                   <?php endif; ?>

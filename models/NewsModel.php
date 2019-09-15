@@ -13,4 +13,8 @@ class NewsModel {
         $stmt = $this->pdo->query("SELECT * FROM `news` ORDER BY `date` DESC LIMIT {$quantity}");
         return $stmt->fetchAll();
     }
+    public function getOneNews($id){
+        $stmt = $this->pdo->query("SELECT * FROM `news` WHERE `id` = {$id}");
+        return $stmt->fetch();
+    }
 }

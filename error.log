@@ -669,3 +669,639 @@ Stack trace:
 #4 {main}
   thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
 [14-Sep-2019 21:52:25 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in D:\OSPanel\domains\blog.loc\views\main.php on line 25
+[15-Sep-2019 09:08:31 Europe/Moscow] PHP Notice:  Undefined variable: user in D:\OSPanel\domains\blog.loc\views\news.php on line 21
+[15-Sep-2019 09:08:31 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to lib\Like::getLikesByUser() must be an instance of lib\Users, null given, called in D:\OSPanel\domains\blog.loc\views\news.php on line 21 and defined in D:\OSPanel\domains\blog.loc\classes\Like.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\views\news.php(21): lib\Like->getLikesByUser(NULL)
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(28): require_once('D:\\OSPanel\\doma...')
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Like.php on line 17
+[15-Sep-2019 09:28:31 Europe/Moscow] PHP Parse error:  syntax error, unexpected ';' in D:\OSPanel\domains\blog.loc\views\news.php on line 25
+[15-Sep-2019 09:28:41 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, string given in D:\OSPanel\domains\blog.loc\views\news.php on line 11
+[15-Sep-2019 09:28:41 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, string given in D:\OSPanel\domains\blog.loc\views\news.php on line 11
+[15-Sep-2019 09:28:41 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, string given in D:\OSPanel\domains\blog.loc\views\news.php on line 11
+[15-Sep-2019 09:28:41 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, string given in D:\OSPanel\domains\blog.loc\views\news.php on line 11
+[15-Sep-2019 09:28:41 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, string given in D:\OSPanel\domains\blog.loc\views\news.php on line 11
+[15-Sep-2019 10:06:45 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Like::getLikesByUser() must be of the type array, string returned in D:\OSPanel\domains\blog.loc\classes\Like.php:18
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(29): lib\Like->getLikesByUser(Object(lib\Users))
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Like.php on line 18
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 10:12:17 Europe/Moscow] PHP Warning:  in_array() expects parameter 2 to be array, integer given in D:\OSPanel\domains\blog.loc\views\news.php on line 12
+[15-Sep-2019 11:35:02 Europe/Moscow] PHP Notice:  Undefined index: cd6jtn3crmcgerl3pl69t1402n92mdu0 in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 20
+[15-Sep-2019 11:35:02 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, null returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(16): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(29): lib\Like->getLikesByUser(Object(lib\Users))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[15-Sep-2019 11:35:27 Europe/Moscow] PHP Notice:  Undefined index: cd6jtn3crmcgerl3pl69t1402n92mdu0 in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 20
+[15-Sep-2019 11:35:28 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, null returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(16): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(29): lib\Like->getLikesByUser(Object(lib\Users))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[15-Sep-2019 11:35:46 Europe/Moscow] PHP Notice:  Undefined index: cd6jtn3crmcgerl3pl69t1402n92mdu0 in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 20
+[15-Sep-2019 11:35:46 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, null returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(16): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(29): lib\Like->getLikesByUser(Object(lib\Users))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[15-Sep-2019 11:35:48 Europe/Moscow] PHP Notice:  Undefined index: cd6jtn3crmcgerl3pl69t1402n92mdu0 in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 20
+[15-Sep-2019 11:35:48 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, null returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(16): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(29): lib\Like->getLikesByUser(Object(lib\Users))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[15-Sep-2019 11:36:35 Europe/Moscow] PHP Notice:  Undefined index: cd6jtn3crmcgerl3pl69t1402n92mdu0 in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 20
+[15-Sep-2019 11:36:35 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Return value of lib\Users::getID() must be of the type string, null returned in D:\OSPanel\domains\blog.loc\classes\Users.php:37
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(16): lib\Users->getID()
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(29): lib\Like->getLikesByUser(Object(lib\Users))
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(34): NewsController->actionIndex(Object(PDO))
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[15-Sep-2019 11:40:06 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 37
+[15-Sep-2019 11:40:06 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 37 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(37): NewsController->actionView(NULL, Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:40:43 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:40:43 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 38 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionView(NULL, Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:40:43 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:40:43 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 38 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionView(NULL, Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:40:44 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:40:44 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 38 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionView(NULL, Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:40:50 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to NewsController::actionView() must be of the type integer, object given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 38 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionView(Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:41:33 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:41:33 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 38 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionView(NULL, Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:41:35 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:41:35 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 38 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionView(NULL, Object(PDO))
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:41:37 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:41:37 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionIndex(NULL, Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:41:39 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:41:39 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionIndex(NULL, Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:41:55 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be an instance of PDO, integer given, called in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct(2)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(39): NewsController->actionIndex(2, Object(PDO))
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:43:09 Europe/Moscow] PHP Notice:  Undefined offset: 0 in D:\OSPanel\domains\blog.loc\core\Router.php on line 28
+[15-Sep-2019 11:43:09 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 38 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:45:40 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 28
+[15-Sep-2019 11:47:40 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:47:40 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 38 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:47:54 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:48:17 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:48:20 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:49:44 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:49:53 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:49:59 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:49:59 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 38 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(38): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:50:03 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:50:08 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:50:10 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 38
+[15-Sep-2019 11:51:03 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:51:36 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:51:36 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:51:36 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:51:37 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:52:38 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$param' (T_VARIABLE), expecting ',' or ')' in D:\OSPanel\domains\blog.loc\core\Router.php on line 41
+[15-Sep-2019 11:52:38 Europe/Moscow] PHP Parse error:  syntax error, unexpected '$param' (T_VARIABLE), expecting ',' or ')' in D:\OSPanel\domains\blog.loc\core\Router.php on line 41
+[15-Sep-2019 11:52:54 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:52:54 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function NewsController::actionView(), 1 passed in D:\OSPanel\domains\blog.loc\core\Router.php on line 41 and exactly 2 expected in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionView('3')
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:53:58 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:53:58 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function NewsController::actionView(), 1 passed in D:\OSPanel\domains\blog.loc\core\Router.php on line 41 and exactly 2 expected in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionView('3')
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:54:10 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:54:10 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function NewsController::actionView(), 1 passed in D:\OSPanel\domains\blog.loc\core\Router.php on line 41 and exactly 2 expected in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionView('3')
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 11:54:12 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:54:21 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:54:21 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:54:46 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:01 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:01 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:02 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:02 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:10 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:10 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:10 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:10 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:10 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:11 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:14 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:55:19 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:55:20 Europe/Moscow] PHP Notice:  Only variables should be passed by reference in D:\OSPanel\domains\blog.loc\core\Router.php on line 29
+[15-Sep-2019 11:55:47 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:56:02 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:56:02 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:56:02 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:56:02 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:56:03 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function model\NewsModel::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26 and exactly 1 expected in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(26): model\NewsModel->__construct()
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionIndex(Object(PDO), NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[15-Sep-2019 11:57:07 Europe/Moscow] PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL) in D:\OSPanel\domains\blog.loc\core\Router.php on line 28
+[15-Sep-2019 11:57:07 Europe/Moscow] PHP Parse error:  syntax error, unexpected '==' (T_IS_EQUAL) in D:\OSPanel\domains\blog.loc\core\Router.php on line 28
+[15-Sep-2019 11:57:21 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 41 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:03:39 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 41 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(41): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:07:53 Europe/Moscow] PHP Parse error:  syntax error, unexpected '.' in D:\OSPanel\domains\blog.loc\core\Router.php on line 33
+[15-Sep-2019 12:07:53 Europe/Moscow] PHP Parse error:  syntax error, unexpected '.' in D:\OSPanel\domains\blog.loc\core\Router.php on line 33
+[15-Sep-2019 12:09:41 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 44 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(44): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:09:59 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 44 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(44): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:09:59 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 44 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(44): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:10:02 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 42 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(42): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:10:37 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 45 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(45): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:10:38 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 45 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(45): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:10:51 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 45 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(45): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:10:51 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 45 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(45): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:10:51 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 45 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(45): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:11:02 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'throw' (T_THROW) in D:\OSPanel\domains\blog.loc\core\Router.php on line 33
+[15-Sep-2019 12:11:02 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'throw' (T_THROW) in D:\OSPanel\domains\blog.loc\core\Router.php on line 33
+[15-Sep-2019 12:11:03 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'throw' (T_THROW) in D:\OSPanel\domains\blog.loc\core\Router.php on line 33
+[15-Sep-2019 12:11:03 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'throw' (T_THROW) in D:\OSPanel\domains\blog.loc\core\Router.php on line 33
+[15-Sep-2019 12:11:12 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'throw' (T_THROW) in D:\OSPanel\domains\blog.loc\core\Router.php on line 42
+[15-Sep-2019 12:11:12 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'throw' (T_THROW) in D:\OSPanel\domains\blog.loc\core\Router.php on line 42
+[15-Sep-2019 12:11:12 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'throw' (T_THROW) in D:\OSPanel\domains\blog.loc\core\Router.php on line 42
+[15-Sep-2019 12:11:12 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'throw' (T_THROW) in D:\OSPanel\domains\blog.loc\core\Router.php on line 42
+[15-Sep-2019 12:15:24 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 35
+[15-Sep-2019 12:15:24 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 44
+[15-Sep-2019 12:15:26 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 35
+[15-Sep-2019 12:15:26 Europe/Moscow] PHP Notice:  Undefined variable: param in D:\OSPanel\domains\blog.loc\core\Router.php on line 44
+[15-Sep-2019 12:15:42 Europe/Moscow] PHP Notice:  A non well formed numeric value encountered in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:16:20 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 44 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(44): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:16:53 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 47 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:16:54 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 47 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:16:59 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 47 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:17:43 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MainController::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\core\Router.php on line 44 and exactly 1 expected in D:\OSPanel\domains\blog.loc\controllers\MainController.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 19
+[15-Sep-2019 12:17:45 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MainController::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\core\Router.php on line 44 and exactly 1 expected in D:\OSPanel\domains\blog.loc\controllers\MainController.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 19
+[15-Sep-2019 12:19:51 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 47 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:20:10 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to NewsController::actionView() must be of the type integer, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 47 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:32
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 32
+[15-Sep-2019 12:26:48 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 6
+[15-Sep-2019 12:26:48 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 8
+[15-Sep-2019 12:26:48 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 10
+[15-Sep-2019 12:26:48 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\blog.loc\views\news_item.php on line 11
+[15-Sep-2019 12:26:48 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 20
+[15-Sep-2019 12:26:48 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 28
+[15-Sep-2019 12:26:48 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 32
+[15-Sep-2019 12:26:48 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 33
+[15-Sep-2019 12:33:15 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'news_id' in 'where clause' in D:\OSPanel\domains\blog.loc\models\NewsModel.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\NewsModel.php(17): PDO->query('SELECT * FROM `...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(35): model\NewsModel->getOneNews(3)
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 3)
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 17
+[15-Sep-2019 12:34:12 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 8
+[15-Sep-2019 12:34:12 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 10
+[15-Sep-2019 12:34:12 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\blog.loc\views\news_item.php on line 11
+[15-Sep-2019 12:34:12 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 20
+[15-Sep-2019 12:34:12 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 28
+[15-Sep-2019 12:34:12 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 32
+[15-Sep-2019 12:34:12 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 33
+[15-Sep-2019 12:34:43 Europe/Moscow] PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\blog.loc\views\news_item.php on line 11
+[15-Sep-2019 12:34:43 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 20
+[15-Sep-2019 12:34:43 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 28
+[15-Sep-2019 12:34:43 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 33
+[15-Sep-2019 12:36:56 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 12
+[15-Sep-2019 12:36:56 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 12
+[15-Sep-2019 12:36:56 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 20
+[15-Sep-2019 12:36:56 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 28
+[15-Sep-2019 12:36:56 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 33
+[15-Sep-2019 12:45:01 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:45:02 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\OSPanel\domains\blog.loc\classes\Like.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(22): PDO->query('SELECT love FRO...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(37): lib\Like->getLikesByNews(3)
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 3)
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:45:30 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:45:30 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\OSPanel\domains\blog.loc\classes\Like.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(22): PDO->query('SELECT love FRO...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(37): lib\Like->getLikesByNews(3)
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 3)
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:45:31 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:45:31 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\OSPanel\domains\blog.loc\classes\Like.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(22): PDO->query('SELECT love FRO...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(37): lib\Like->getLikesByNews(3)
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 3)
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:46:07 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:46:07 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\OSPanel\domains\blog.loc\classes\Like.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(22): PDO->query('SELECT love FRO...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(37): lib\Like->getLikesByNews(3)
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 3)
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:46:41 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:46:41 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\OSPanel\domains\blog.loc\classes\Like.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(22): PDO->query('SELECT love FRO...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(37): lib\Like->getLikesByNews(3)
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 3)
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:46:45 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:46:45 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\OSPanel\domains\blog.loc\classes\Like.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(22): PDO->query('SELECT * FROM n...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(37): lib\Like->getLikesByNews(3)
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 3)
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:46:57 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:46:57 Europe/Moscow] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in D:\OSPanel\domains\blog.loc\classes\Like.php:22
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\Like.php(22): PDO->query('SELECT love FRO...')
+#1 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(37): lib\Like->getLikesByNews(3)
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 3)
+#3 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:47:33 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:47:33 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 20
+[15-Sep-2019 12:47:33 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 33
+[15-Sep-2019 12:48:22 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:48:22 Europe/Moscow] PHP Parse error:  syntax error, unexpected end of file in D:\OSPanel\domains\blog.loc\views\news_item.php on line 38
+[15-Sep-2019 12:48:30 Europe/Moscow] PHP Notice:  Undefined variable: id in D:\OSPanel\domains\blog.loc\classes\Like.php on line 22
+[15-Sep-2019 12:48:30 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 14
+[15-Sep-2019 12:48:50 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 14
+[15-Sep-2019 12:48:58 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 14
+[15-Sep-2019 12:49:46 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 12
+[15-Sep-2019 12:49:46 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\views\news_item.php on line 14
+[15-Sep-2019 12:49:46 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:50:06 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 12
+[15-Sep-2019 12:50:06 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:50:28 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:50:59 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:51:05 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 12
+[15-Sep-2019 12:51:05 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:51:12 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:51:22 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:51:58 Europe/Moscow] PHP Notice:  Use of undefined constant quantity_likes - assumed 'quantity_likes' in D:\OSPanel\domains\blog.loc\views\news_item.php on line 12
+[15-Sep-2019 12:51:58 Europe/Moscow] PHP Warning:  Illegal string offset 'id' in D:\OSPanel\domains\blog.loc\views\news_item.php on line 12
+[15-Sep-2019 12:51:58 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:52:18 Europe/Moscow] PHP Notice:  Use of undefined constant quantity_likes - assumed 'quantity_likes' in D:\OSPanel\domains\blog.loc\views\news_item.php on line 12
+[15-Sep-2019 12:52:18 Europe/Moscow] PHP Warning:  Illegal string offset 'id' in D:\OSPanel\domains\blog.loc\views\news_item.php on line 12
+[15-Sep-2019 12:52:18 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:52:40 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:54:46 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '[' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
+[15-Sep-2019 12:54:46 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:55:42 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:55:54 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:56:13 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:58:22 Europe/Moscow] PHP Notice:  Use of undefined constant like - assumed 'like' in D:\OSPanel\domains\blog.loc\views\news_item.php on line 14
+[15-Sep-2019 12:58:22 Europe/Moscow] PHP Warning:  Illegal string offset 'love' in D:\OSPanel\domains\blog.loc\views\news_item.php on line 14
+[15-Sep-2019 12:58:22 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:58:27 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:58:39 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 12:59:03 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 13:00:06 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 13:00:36 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 13:02:23 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 13:02:29 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 13:02:43 Europe/Moscow] PHP Notice:  Undefined variable: col in D:\OSPanel\domains\blog.loc\views\news_item.php on line 18
+[15-Sep-2019 13:14:00 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'require_once' (T_REQUIRE_ONCE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 39
+[15-Sep-2019 13:14:01 Europe/Moscow] PHP Parse error:  syntax error, unexpected 'require_once' (T_REQUIRE_ONCE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 39

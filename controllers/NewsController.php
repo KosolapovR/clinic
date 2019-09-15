@@ -15,6 +15,7 @@ class NewsController {
     private $model;
     private $user;
     private $news;
+    private $likes;
     public function __construct() { 
         $this->user = new lib\Users($_SESSION[session_id()]);
     }
@@ -24,12 +25,18 @@ class NewsController {
        
         $this->model = new model\NewsModel($pdo);
         $this->news = $this->model->getNews();
-        
+       //получаем все лайки текущего пользователя
+        $this->likes = ((new lib\Like($pdo))->getLikesByUser($this->user));
         require_once VIEWS . '/news.php';
     }
-    public function actionView()
+    public function actionView($pdo, int $id)
     {
-        echo "вызван метод " . __METHOD__ . "<br>";
+        $model = new model\NewsModel($pdo);
+        $news = $model->getOneNews($id);
+        $this->likes = new lib\Like($pdo);
+        $like = $this->likes->getLikesByOneNews($id);
+        $likes_current_user = $this->likes->getLikesByUser($this->user);
+        require_once VIEWS . '/news_item.php';
         //echo $id;
     }
 }

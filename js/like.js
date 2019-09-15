@@ -2,7 +2,9 @@ $(document).ready(function(){
     var login = $('#login').html();
     
     function updateLike(response){
-           $(this).siblings('.number_of_like').html(response);    
+           $(this).siblings('.number_of_like').html(response); 
+           $(this).siblings('.number_of_like').css('color', '#D75A4A');
+           $(this).css('background', 'url(../img/icons/like.svg)');
     }
     
     $('.like').on('click', function(){

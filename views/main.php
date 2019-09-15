@@ -4,7 +4,7 @@
       <h3>новости</h3>
       <ul class="news_list">
          <?php foreach($this->news as $col):?>
-          <li class="news_item"><?=$col['subject']?></li>
+          <li class="news_item"><a href="http://blog.loc/news/<?=$col['id']?>"><?=$col['subject']?></a></li>
           <?php endforeach;?>
       </ul>
       </aside>

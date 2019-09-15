@@ -6,7 +6,7 @@ class Router {
     public static function run($pdo) {
         //Считываем адрес из URI
         $uri = trim($_SERVER['REQUEST_URI'], "/");
-       
+      
         //перебрасываем на главную если URI пустой или == exit
         if ($uri == null){
             $uri = "main"; 
@@ -24,14 +24,27 @@ class Router {
                     $segments = explode("/", $path);
                     //выделяем название контроллера и экшина
                     $controller = array_shift($segments) . "Controller";
-                    $action = "action" . ucfirst(array_shift($segments)); 
+                    $action = "action" . ucfirst(array_shift($segments));
+                    
+                    //Обработка параметров для страницы новостей
+                    if($controller == 'newsController' && count(explode("/", $uri)) == 2){
+                        $param = (int)(explode("/", $uri)[1]);            
+                    } else {
+                        $param = null;
+                        if($controller == 'newsController' && count(explode("/", $uri)) > 2){
+                            throw new exceptions\PageNotFoundException();
+                        }
+                    }
+                   
+                    
                     $controller_path = "controllers/" . $controller . ".php";
 
                     if(file_exists($controller_path)){
                         require_once $controller_path;
                         $controller_object = new $controller($pdo);
+                        
                         if(method_exists($controller_object, $action)){ 
-                            $controller_object->$action($pdo);
+                            $controller_object->$action($pdo, $param);
                         } 
                         break;
                     } 

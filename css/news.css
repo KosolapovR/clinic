@@ -48,12 +48,12 @@ main .whrapper{
     margin-right: 2px;
     height: 15px;
     width: 15px;
-    background: url(../img/icons/like.svg);
+    
     cursor: pointer;
     color: transparent;
 }
 .number_of_like{
-    color: #D75A4A;
+    color: #333;
 }
 .text{
     margin-bottom: 20px;

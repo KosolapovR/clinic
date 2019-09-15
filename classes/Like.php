@@ -1,11 +1,5 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace lib;
 
 /**
@@ -14,5 +8,18 @@ namespace lib;
  * @author Роман
  */
 class Like {
-    
+    private $pdo;
+    public function __construct($pdo) {
+        $this->pdo = $pdo;
+    }
+    public function getLikesByUser(Users $user): array {
+        $id = $user->getID();
+        $stmt = $this->pdo->query("SELECT * FROM likes WHERE user_id = {$id}");
+        $result = $stmt->fetchAll();
+        return $result;
+    }
+    public function getLikesByOneNews($news_id){
+        $quantity = $this->pdo->query("SELECT * FROM `news` WHERE `id` = '{$news_id}'")->fetch();
+        return $quantity;
+    }
 }
