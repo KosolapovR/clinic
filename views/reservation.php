@@ -17,7 +17,7 @@
             </ul>
         </nav>
         
-        <?php if (ReservationController::$category !== null):?>
+        <?php if (self::$category !== null):?>
         <label for="start">Выбрать дату:</label>
 <input type="date" 
          id="start"

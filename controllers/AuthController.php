@@ -2,7 +2,7 @@
 
 class AuthController {
     
-    public function actionIndex(){
+    public function actionIndex(\PDO $pdo){
          //исходная страница до введения данных в форму
         if(!isset($_REQUEST['registration'])){
             $text_info = '';
@@ -10,7 +10,7 @@ class AuthController {
         // обработка введенных данных
         }else{         
             //Занят ли Логин 
-            if(model\LoginModel::userExists($_REQUEST['name'])){ 
+            if(model\LoginModel::userExists($_REQUEST['name'], $pdo)){ 
             //сохранение в переменную информационной строки
              $text_info = "<h4 class=\"text_info\">этот логин уже занят</h4>";
              include_once VIEWS . "/auth.php";
@@ -36,16 +36,21 @@ class AuthController {
                 strlen(trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL))) <= 4) {
                 //сохранение в переменную информационной строки
                 $text_info = "<h4 class=\"text_info\"> неверный формат email</h4>";
-                include_once VIEWS . "/auth.php";
+                require_once VIEWS . "/auth.php";
                 } else {
                     //если все поля заполнены пытаемся добавить пользователя в БД
+                    try {
                         if (model\AuthModel::addNewUser($_REQUEST['name'], $_REQUEST['pass'], $_REQUEST['tel'], $_REQUEST['email'])){
 
                         $cur_user = new lib\Users($_REQUEST['name'], $_REQUEST['pass'], $_REQUEST['tel'], $_REQUEST['email']);
                         $code = model\AuthModel::verifyEmail($_REQUEST['email'], $_REQUEST['name']);
                         $cur_user->setVerifyCode($code);  
                         header("Location: login");            
+                        } else{
+                            throw new exceptions\CannotAddToDBException;
                         }
+                    } catch (Exception $ex) {               
+                    }    
                 }
             }       
         }

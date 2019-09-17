@@ -26,7 +26,8 @@
                     <div class="number_of_like" style="color: #333"><?=$like['love']?></div>
                     <?php endif; ?>
                     <?php $like_red = false;?>
-                    
+                    <div class="views" ></div>
+                    <div class="number_of_views"><?=$news['views']?></div>
                 </div>
                 <p class="text"><?=$news['text']?></p>
             </div>

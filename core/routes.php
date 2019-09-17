@@ -8,6 +8,7 @@ return array(
     "login" => "login/index",
     "auth" => "auth/index",
     "profile" => "profile/index",
+    "doctors" => "doctors/index",
     "exit" => "exit/index",
     "reservation/category/[a-z]+" => "reservation/category",
     "reservation" => "reservation/index"

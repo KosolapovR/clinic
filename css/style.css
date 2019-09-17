@@ -103,11 +103,23 @@ main {
     padding: 10px;
     background: red; }
     main .right_bar .person_container .person_card {
-      height: 150px;
-      background: green;
-      margin-bottom: 10px; }
+      height: 220px;
+      background: yellow;
+      margin-bottom: 10px; 
+
+}
+.person_card .photo{
+    height: 170px;
+}
+.person_card .info_block{
+    background: #55F;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
   main section {
     height: auto;
     background: aqua;
     width: 100%;
     text-align: center; }
+

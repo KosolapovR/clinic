@@ -14,6 +14,6 @@
 class ExitController {
     public function actionIndex()
     {
-        session_unset();      
+        session_destroy();      
     }
 }

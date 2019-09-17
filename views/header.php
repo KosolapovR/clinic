@@ -15,6 +15,10 @@
     <script src="/js/jQuery.js"></script>
     <script src="/js/like.js"></script>
     <?php endif; ?>
+    <?php if(preg_match("/doctors/", $_SERVER['REQUEST_URI'])):?>
+    <link rel="stylesheet" href="/css/doctors.css">
+    <script src="/js/jQuery.js"></script>
+    <?php endif; ?>
     <?php if(preg_match("/reservation/", $_SERVER['REQUEST_URI'])):?>
     <link rel="stylesheet" href="/css/reservation.css">
     <script src="/js/jQuery.js"></script>
@@ -43,7 +47,7 @@
               <?php if($_SERVER['REQUEST_URI'] != '/news'):?>
               <li><a href="/news">новости</a></li>
               <?php endif; ?>
-              <li><a href="">наши сотрудники</a></li>
+              <li><a href="http://blog.loc/doctors">наши сотрудники</a></li>
               <?php if($_SERVER['REQUEST_URI'] != '/profile'):?>
               <?php if(isset($_SESSION[session_id()])):?>
               <li><a href="/profile">личный кабинет <p id="login"><?=$_SESSION[session_id()]?></p></a></li>

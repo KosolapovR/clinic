@@ -3,14 +3,14 @@
 
 class LoginController {
     
-    public function actionIndex(){
+    public function actionIndex(\PDO $pdo){
         //вызов модели   
         $text_info = "";
         if(isset($_REQUEST['login'])) {
            include_once MODELS . "/LoginModel.php";
         
             //проверка наличия пользователя в списке зарегистрированных
-            if(model\LoginModel::checkLogin($_REQUEST['name'], $_REQUEST['pass'])){
+            if(model\LoginModel::checkLogin($_REQUEST['name'], $_REQUEST['pass'], $pdo)){
                 //редирект на главную страницу, ползователь существует
 
                 $_SESSION[session_id()] = $_REQUEST['name'];

@@ -11,7 +11,8 @@
  *
  * @author Роман
  */
-class MainController {
+class MainController 
+{
     private $model;
     private $pdo;
     private $news;
@@ -19,9 +20,11 @@ class MainController {
     public function __construct($pdo) {    
         $this->pdo = $pdo;
         $this->model = new \model\MainModel($this->pdo);
-        $this->news = $this->model->getNews();
+        $this->news = $this->model->getNews();  
     }
     public function actionIndex(){
-        include_once ROOT . "/views/main.php";
+        $doctors = new \model\DoctorsModel($this->pdo);
+        $doctors = $doctors->getDoctors(2);
+        require_once ROOT . "/views/main.php";  
     }
 }

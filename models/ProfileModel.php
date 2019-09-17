@@ -2,12 +2,13 @@
 
 namespace model;
 
-class ProfileModel {
+class ProfileModel 
+{
     public $user;
-    public function __construct(string $user, \PDO $pdo) {
-            
+    
+    public function __construct(string $user, \PDO $pdo) 
+    {
         $this->user = new \lib\Users($user);
-           
             //динамическое заполнение полей профиля и сохранение
             foreach ($_REQUEST as $key => $val){
                 $metod = "set" . $key;
@@ -15,25 +16,19 @@ class ProfileModel {
                     $this->user->$metod($val);
                 }
             }
-            // header("Location: profile");
-        
-        
-         
-        if(isset($_POST['unload_file'])) {
-            
+            //отображение фото профиля
+        if(isset($_POST['unload_file'])) {         
             move_uploaded_file($_FILES['file']['tmp_name'], ROOT . "/img/profile_photo/" . $_SESSION[session_id()] . ".jpg");
-            
             $this->user->setImgPath();
-            
             header("Location: profile");
         } 
     }
-    public function showNotes(\lib\Users $user, \PDO $pdo){
+    public function showNotes(\lib\Users $user, \PDO $pdo)
+    {
         return \lib\Queue::getNotesByUser($user, $pdo);
     }
-
-    public function showLogin() {
+    public function showLogin() 
+    {
         return $this->user->getLogin();
     }
-    
 }

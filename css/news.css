@@ -55,6 +55,17 @@ main .whrapper{
 .number_of_like{
     color: #333;
 }
+.views{
+    margin-left: 15px;
+    margin-right: 2px;
+    margin-top: -1px;
+    height: 18px;
+    width: 18px;
+    background: url(../img/icons/eye.svg);
+}
+.number_of_views{
+    color: #333;
+}
 .text{
     margin-bottom: 20px;
     color: #444;

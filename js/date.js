@@ -31,7 +31,7 @@ $(document).ready(function(){
     
 	// Отправляем запрос
 	$.ajax({
-		url: '/ajax.php',
+		url: '/ajax/ajax.php',
 		type: 'POST',
 		data: {date: $(this).val(),
         url: document.location.href}        
@@ -85,7 +85,7 @@ $(document).ready(function(){
                 console.log();
             // Отправляем запрос
             $.ajax({
-                url: '/add_to_queue.php',
+                url: '/ajax/add_to_queue.php',
                 type: 'POST',
                 data: {
                     date: date,
