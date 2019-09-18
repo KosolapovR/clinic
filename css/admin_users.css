@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    height: 40px;
+    background: #99D;
+    border-bottom: 2px solid #559;
+}
+table{
+    margin-top: 40px;
+    width: 100%;
+    
+}
+tr{
+    height: 50px;
+}
+td{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #444;
+    
+    white-space: pre-line;
+    overflow-x: hidden;
+    
+}
+tr>td:first-child{
+    width: 60px;
+    
+    background: red;
+    
+}
+.text{
+    width: 450px;
+   
+    overflow-x: hidden;   
+}
+input{
+    width: auto;
+    height: 30px;
+}

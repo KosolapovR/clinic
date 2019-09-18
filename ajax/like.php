@@ -2,9 +2,8 @@
 session_start();
 define("ROOT", dirname(__DIR__));
 require_once  ROOT . '/config/configuration.php';
-    //'/config/configuration.php'
-//обновляем значение поля лайк в базе данных и возвращаем новое число лайков
 
+//обновляем значение поля лайк в базе данных и возвращаем новое число лайков
 $news_id = $_POST['like'];
 $login = $_POST['login'];
  if(!empty($_SESSION[session_id()])){

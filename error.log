@@ -1907,3 +1907,94 @@ Stack trace:
 [17-Sep-2019 11:43:08 Europe/Moscow] PHP Notice:  Undefined index: last_view3 in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 35
 [17-Sep-2019 11:43:08 Europe/Moscow] PHP Notice:  Undefined index: last_view3 in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 39
 [17-Sep-2019 11:43:08 Europe/Moscow] PHP Notice:  Unknown: Skipping numeric key 3 in Unknown on line 0
+[18-Sep-2019 08:52:24 Europe/Moscow] PHP Fatal error:  Uncaught Error: Access to undeclared static property: AdminController::$section in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:27
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 27
+[18-Sep-2019 08:56:42 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'PageNotFoundException' not found in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:31
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 31
+[18-Sep-2019 08:56:48 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'PageNotFoundException' not found in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:31
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 31
+[18-Sep-2019 08:56:48 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'PageNotFoundException' not found in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:31
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 31
+[18-Sep-2019 08:56:50 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'PageNotFoundException' not found in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:31
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 31
+[18-Sep-2019 09:01:32 Europe/Moscow] PHP Warning:  require_once(/admin.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 1
+[18-Sep-2019 09:01:32 Europe/Moscow] PHP Fatal error:  require_once(): Failed opening required '/admin.php' (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 1
+[18-Sep-2019 09:14:53 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function model\NewsModel() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:14
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 14
+[18-Sep-2019 09:15:49 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function model\NewsModel() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:14
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 14
+[18-Sep-2019 09:15:54 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function model\NewsModel() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:14
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 14
+[18-Sep-2019 09:15:54 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function model\NewsModel() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:14
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 14
+[18-Sep-2019 09:16:02 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function model\NewsModel() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:14
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 14
+[18-Sep-2019 09:16:03 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function model\NewsModel() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:14
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 14
+[18-Sep-2019 09:16:52 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function model\NewsModel() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:14
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 14
+[18-Sep-2019 09:16:53 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function model\NewsModel() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:14
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 14
+[18-Sep-2019 09:16:53 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function model\NewsModel() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:14
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(Object(PDO), NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 14
+[18-Sep-2019 09:17:11 Europe/Moscow] PHP Notice:  Undefined index: wiews in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 41
+[18-Sep-2019 09:17:11 Europe/Moscow] PHP Notice:  Undefined index: wiews in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 41
+[18-Sep-2019 09:17:11 Europe/Moscow] PHP Notice:  Undefined index: wiews in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 41
+[18-Sep-2019 09:17:11 Europe/Moscow] PHP Notice:  Undefined index: wiews in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 41
+[18-Sep-2019 09:17:11 Europe/Moscow] PHP Notice:  Undefined index: wiews in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 41

@@ -1,5 +1,7 @@
 <?php
 return array(
+    "admin/([a-z]+)" => "admin/view",
+    "admin" => "admin/index",
     "verify" => "verify/index",
    "ajax" => "ajax/index",
     "news/([0-9]+)" => "news/view",

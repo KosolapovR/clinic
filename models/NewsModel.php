@@ -3,9 +3,11 @@ namespace model;
 
 class NewsModel {
     private $pdo;
+    private static $pdo_static;
     private $user;
     public function __construct(\PDO $pdo) 
     {
+        self::$pdo_static = $pdo;
         $this->pdo = $pdo;
         if(isset($_SESSION[session_id()])){
             $this->user = new \lib\Users($_SESSION[session_id()]);
@@ -22,13 +24,12 @@ class NewsModel {
         $stmt = $this->pdo->query("SELECT * FROM `news` WHERE `id` = {$id}");
         return $stmt->fetch();
     }
+    // Обновляем количество просмотров новости с учетом того
+    // Что бы один юзер не мог обновлять просмотры чаще чем раз в 60 * 60 сек
+    // Создаем сессию с привязкой к конкретной новости и конкретному юзеру
+    // Кладем в нее время просмотра нововости
     public function updateViews($id, \lib\Users $user):bool
-    {
-        // Обновляем количество просмотров новости с учетом того
-        // Что бы один юзер не мог обновлять просмотры чаще чем раз в 60 * 60 сек
-        // Создаем сессию с привязкой к конкретной новости и конкретному юзеру
-        // Кладем в нее время просмотра нововости
-        
+    { 
         $time = new \DateTime();
 
         // если сессии еще не существует (юзер первый раз смотрит новость)
@@ -57,5 +58,34 @@ class NewsModel {
             } else {
                 return false;
             }        
+    }
+    //Редактирование новостей в админпанеле
+    public function updateNews($id, array $data):bool
+    {
+        $statement = "UPDATE `news` SET";
+        //счетчик для определения первой итерации в цикле
+        //необходимо правильно расставить запятые
+        //нужно добавить проверку типа введенной даты
+        $i = 0;
+        foreach($data as $key => $value){
+            if($key != 'id'){  
+                if($i == 0){
+                    $statement .= " `$key`='{$value}'";
+                } else {
+                    $statement .= ", `$key`='{$value}'";
+                }
+            }
+            $i++;
+        }
+        $statement .= " WHERE `id`={$id}";
+        //echo $statement;
+        try {
+            $result = $this->pdo->query($statement);
+        } catch (\PDOException $exc) {
+            echo $exc->getTraceAsString();
+            return false;
+        }
+
+        return true;
     }
 }
