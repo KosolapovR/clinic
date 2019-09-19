@@ -1998,3 +1998,10 @@ Stack trace:
 [18-Sep-2019 09:17:11 Europe/Moscow] PHP Notice:  Undefined index: wiews in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 41
 [18-Sep-2019 09:17:11 Europe/Moscow] PHP Notice:  Undefined index: wiews in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 41
 [18-Sep-2019 09:17:11 Europe/Moscow] PHP Notice:  Undefined index: wiews in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 41
+[19-Sep-2019 11:29:09 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '[' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
+[19-Sep-2019 11:29:36 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '/' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
+[19-Sep-2019 11:29:40 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '[' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
+[19-Sep-2019 11:29:40 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '[' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
+[19-Sep-2019 11:29:50 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '{' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
+[19-Sep-2019 11:29:54 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '0' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
+[19-Sep-2019 11:29:55 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '0' in D:\OSPanel\domains\blog.loc\views\header.php on line 18

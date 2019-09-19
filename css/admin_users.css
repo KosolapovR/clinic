@@ -1,18 +1,20 @@
 h1{
+    
     text-align: center;
     height: 40px;
     background: #99D;
     border-bottom: 2px solid #559;
 }
-table{
+table.news{
     margin-top: 40px;
     width: 100%;
     
 }
-tr{
+.news tr{
     height: 50px;
 }
-td{
+.news td{
+   
     text-align: center;
     font-size: 14px;
     border: 1px solid #444;
@@ -21,7 +23,7 @@ td{
     overflow-x: hidden;
     
 }
-tr>td:first-child{
+.news tr>td:first-child{
     width: 60px;
     
     background: red;
@@ -29,10 +31,53 @@ tr>td:first-child{
 }
 .text{
     width: 450px;
-   
     overflow-x: hidden;   
 }
 input{
     width: auto;
+    height: 100px;
+}
+.save{
+    color: #888;
+}
+
+.enable{
+    cursor: pointer;
+}
+
+.add_news_container{
+    margin: 20px 0;
+   height: auto;
+    background: blue;
+}
+table.add_news{
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #333;
+    text-align: center;
+}
+.add_news tr td{
+    border: 1px solid #222;
+    height: 80px;
+}
+.add_news tr td:first-child{
+    width: 100px;
+}
+.add_news tr td:nth-child(2){
+    width: 200px;
+}
+.add_news tr td textarea{
+    box-sizing: border-box;
+    height: 100%;
+	width: 100%;
+}
+.add_news tr td:nth-child(4){
+    width: 200px;
+}
+.add_news tr td input{
     height: 30px;
+    width: 100%;
+}
+#add_btn{
+    cursor: pointer;
 }

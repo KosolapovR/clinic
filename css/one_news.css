@@ -1,0 +1,15 @@
+main .whrapper{
+    height: auto;
+        min-height: 82vh;
+}
+.news-card{
+    height: auto;
+
+}
+.news-card_img img{
+   height: auto;
+}
+.text{
+    max-height: 100%;
+    overflow-x: visible;
+}

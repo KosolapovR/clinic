@@ -15,6 +15,12 @@
     <script src="/js/jQuery.js"></script>
     <script src="/js/like.js"></script>
     <?php endif; ?>
+    <?php if(preg_match("#news/[0-9]+#", $_SERVER['REQUEST_URI'])):?>
+    <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="/css/one_news.css">
+    <script src="/js/jQuery.js"></script>
+    <script src="/js/like.js"></script>
+    <?php endif; ?>
     <?php if(preg_match("/doctors/", $_SERVER['REQUEST_URI'])):?>
     <link rel="stylesheet" href="/css/doctors.css">
     <script src="/js/jQuery.js"></script>

@@ -9,9 +9,11 @@ foreach($_POST as $key => $value){
         $data[$key] = $_POST[$key];
     }
 }
-//print_r($_POST);
+
 $model = new \model\NewsModel($pdo);
-$model->updateNews($_POST['id'], $data);
-echo json_encode($model->getOneNews($_POST['id'])); 
+if($model->updateNews($_POST['id'], $data)){
+    echo json_encode($model->getOneNews($_POST['id']));
+}
+ 
 
 

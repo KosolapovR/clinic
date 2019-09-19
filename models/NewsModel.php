@@ -14,6 +14,16 @@ class NewsModel {
         }
         
     }
+
+    public function addNews($date, $subject, $text, $img_path) 
+    {
+        $stmt = $this->pdo->query("INSERT INTO `news` (`date`, `subject`, `text`, `img_path`) VALUES ('{$date}', '{$subject}', '{$text}', '{$img_path}')");
+        if($stmt){
+            return "Новость добавлена";
+        } else{
+            return "Не удалось добавить новость";
+        }
+    }
     public function getNews(int $quantity = 5):array 
     {
         $stmt = $this->pdo->query("SELECT * FROM `news` ORDER BY `date` DESC LIMIT {$quantity}");
@@ -78,7 +88,7 @@ class NewsModel {
             $i++;
         }
         $statement .= " WHERE `id`={$id}";
-        //echo $statement;
+        //echo $statement;  
         try {
             $result = $this->pdo->query($statement);
         } catch (\PDOException $exc) {
