@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Запись онлайн</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <?php if($_SERVER['REQUEST_URI'] == '/profile'):?>
     <link rel="stylesheet" href="/css/profile.css">
     <script src="/js/jQuery.js"></script>

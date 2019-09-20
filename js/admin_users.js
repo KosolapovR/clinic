@@ -55,12 +55,10 @@ $(document).ready(function(){
         }     
         
         redaction = false;
-        $(document).on('click', function(evt){
-            if(evt.target.className.match(/input/))
-        var val = $('.news tr td input').val(),
-            elem = $('.news tr td input');
-            inputToTd(elem, val); 
-    });
+       // $(document).off('click');
+        
+            
+        
     }
     function inputToTd(element, value){
         
@@ -69,8 +67,7 @@ $(document).ready(function(){
             //console.log($('.input_date').length);
         element.replaceWith("<div>" + value + "</div>");
       
-    }
-          
+    }        
     function save(){ 
         //проверяем нажата ли разблокированныя кнопка и отправляем запрос
         if($(this).hasClass('enable') === true){
@@ -101,8 +98,7 @@ $(document).ready(function(){
                 console.log("Что-то на сервере не так"); 
             })          
        }     
-    }
-    
+    }   
     function add_news(){
         var add_date = $("#add_date").val();
         var add_subject = $("#add_subject").val();
@@ -126,17 +122,35 @@ $(document).ready(function(){
                 console.log("Что-то на сервере не так"); 
             })          
     }
+    function deleteNews(){
+        console.log($(this).html);
+    }
     
     //редактирование полей таблицы
-    
     $(document).on('click', '.redact', trToUnput);
 
     // сохранение изменений в БД
-
     $(document).on('click', '.save', save);
     
-    $(document).on('click', '.redact', trToUnput);  
-    
+    // удаление из БД
+    $(document).on('click', '.delete', function (){
+        console.log($(this).parent().remove());
+        $.ajax({
+                url: '/ajax/delete_news.php',
+                type: 'POST',
+                context: this,
+                data: { 
+                    id: $(this).siblings('.id').html()
+                }        
+            })
+            .done(function(response) {
+      
+            })
+            .fail(function() {
+                console.log("Что-то на сервере не так"); 
+            })          
+    });
+       
         text = "";
         date = "";
         subject = "";

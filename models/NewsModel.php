@@ -24,6 +24,19 @@ class NewsModel {
             return "Не удалось добавить новость";
         }
     }
+    public function deleteNews($id)
+    {
+        try {
+            $res = $this->pdo->query("DELETE FROM `news` WHERE `id`={$id}");
+            if($res){
+                return "Новость удалена успешно!";
+            }
+             return "Новость не удалена...";
+        } catch (\PDOException $exc) {
+            $exc->getTraceAsString();
+        } 
+    }
+
     public function getNews(int $quantity = 5):array 
     {
         $stmt = $this->pdo->query("SELECT * FROM `news` ORDER BY `date` DESC LIMIT {$quantity}");

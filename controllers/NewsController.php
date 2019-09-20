@@ -16,7 +16,7 @@ class NewsController
     public function actionIndex($pdo)
     {
         $this->model = new model\NewsModel($pdo);
-        $this->news = $this->model->getNews();
+        $this->news = $this->model->getNews(100);
        //получаем все лайки текущего пользователя
         if($this->user instanceof \lib\Users){
         $this->likes = ((new lib\Like($pdo))->getLikesByUser($this->user));

@@ -12,7 +12,7 @@ class AdminController
     public function actionView(\PDO $pdo)
     {
         $this->model = new \model\NewsModel($pdo);
-        $news = $this->model->getNews(5);
+        $news = $this->model->getNews(15);
         $uri = trim($_SERVER['REQUEST_URI'], "/");
         $segments = explode('/', $uri);
         self::$section = array_pop($segments); 

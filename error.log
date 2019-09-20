@@ -2005,3 +2005,10 @@ Stack trace:
 [19-Sep-2019 11:29:50 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '{' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
 [19-Sep-2019 11:29:54 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '0' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
 [19-Sep-2019 11:29:55 Europe/Moscow] PHP Warning:  preg_match(): Unknown modifier '0' in D:\OSPanel\domains\blog.loc\views\header.php on line 18
+[20-Sep-2019 07:51:01 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to model\NewsModel::updateViews() must be an instance of lib\Users, null given, called in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 29 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:54
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\NewsController.php(29): model\NewsModel->updateViews(4, NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 4)
+#2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 54
