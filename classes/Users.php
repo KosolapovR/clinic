@@ -16,8 +16,7 @@ class Users {
 
     public function __construct($login, $password = null, $tel = null, $email = null) 
     {
-        $pdo = new \PDO(DSN, DB_USER, DB_PASS);
-        $this->pdo=$pdo;
+        $this->pdo=\lib\DBlink::getInstance();
         $this->pdo->setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
         $this->login = $login;
         $this->password = $password;

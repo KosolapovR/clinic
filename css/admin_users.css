@@ -1,3 +1,116 @@
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.blank{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(100, 120, 140, 0.8);
+    z-index: 100;
+}
+#popUP{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #444;
+    background: #ddd;
+    height: 300px;
+    width: 85%;
+    border-radius: 7px;
+}
+#popUP .inputs{
+    height: 150px;
+}
+.fields{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+#popUP .fields input{
+    height: 30px;
+    margin: 0 5px;
+    flex: 1 1 15em;
+}
+.inputs table tr th:nth-child(1){
+   
+    width: 15%;
+
+}
+.inputs table tr th:nth-child(2){
+    
+    width: 15%;
+}
+.inputs table tr th:nth-child(4){
+   
+    width: 15%;
+}
+#popUP .fields textarea{
+    flex: 3 3 55em;
+    height: 110px;
+    resize: none;
+    margin: 0 5px;
+}
+#popUP>.close{
+    background: url(../img/icons/close.svg);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+#popUP .inputs{
+    padding: 20px;
+    margin: 0 -5px;
+    width: 90%;
+    margin: 50px auto 0;
+    height: 70%;
+}
+#popUP>.inputs table{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#popUP>.inputs table{
+    background: linear-gradient(#74b9ff, #00cec9);
+    border-collapse: separate;
+    width: 100%;
+}
+#popUP>.inputs table tr th{
+    border: 0px;
+}
+#popUP .save{
+    width: 120px;
+    height: 30px;
+    background: linear-gradient(30deg, #74b9ff, #0984e3);
+    position: absolute;
+    right:  20px;
+    padding: 7px 24px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+}
+#popUP .save:hover{
+     background: linear-gradient(30deg, #0984e3, #74b9ff);
+    -webkit-transition: background 0.3s ease;
+    -o-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+}
+
 h1{
     
     text-align: center;
@@ -8,25 +121,44 @@ h1{
 table.news{
     margin-top: 40px;
     width: 100%;
+    text-align: left;
+  border-collapse: collapse;
+  background: #454F68;
+
     
 }
 .news tr{
     height: 50px;
+  
 }
-.news td{
-   
+.news tr th{
+    color: #EDB749;
+      text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.news tr td{
+      color: #CAD4D6;
     text-align: center;
     font-size: 14px;
-    border: 1px solid #444;
-    
+   border-top: 1px solid #37B5A5;
+    border-bottom: 1px solid #37B5A5;
+     border-right: 1px solid #37B5A5;
     white-space: pre-line;
     overflow-x: hidden;
     
 }
+.news tr td div{
+    color: inherit;
+}
+.news tr:first-child{
+    border-bottom: 1px solid #37B5A5;
+
+}
 .news tr>td:first-child{
+    
     width: 60px;
     
-    background: red;
     
 }
 .text{
@@ -34,11 +166,35 @@ table.news{
     overflow-x: hidden;   
 }
 input{
-    width: auto;
+    
     height: 100px;
 }
-.save{
-    color: #888;
+.edit{
+    margin: 0 auto;
+   background: url(../img/icons/edit.svg);
+
+    filter: brightness(0) invert(1);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.edit:hover{
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+.delete{
+     margin: 0 auto;
+   background: url(../img/icons/delete.svg);
+
+    filter: brightness(0) invert(80%);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.delete:hover{
+
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
 .enable{

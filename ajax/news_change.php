@@ -10,7 +10,7 @@ foreach($_POST as $key => $value){
     }
 }
 
-$model = new \model\NewsModel($pdo);
+$model = new \model\NewsModel();
 if($model->updateNews($_POST['id'], $data)){
     echo json_encode($model->getOneNews($_POST['id']));
 }

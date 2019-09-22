@@ -11,7 +11,7 @@ $category = array_pop(explode("/", $url));
 $sess_id = array_pop(explode('=', $_POST['session']));
 
 $user = new \lib\Users($login);
-$notes = \lib\Queue::getNotesByUser($user, $pdo);
+$notes = \lib\Queue::getNotesByUser($user, \lib\DBlink::getInstance());
 $in_array = false;
 foreach ($notes as $col) {
     if($category == $col['category']){
@@ -20,7 +20,7 @@ foreach ($notes as $col) {
     }
 }
 if(!$in_array){
-   \lib\Queue::addQueue($date, $time, $category, $user, $pdo); 
+   \lib\Queue::addQueue($date, $time, $category, $user, \lib\DBlink::getInstance()); 
 } else {
     echo json_encode($in_array);
 }

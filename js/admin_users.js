@@ -69,8 +69,12 @@ $(document).ready(function(){
       
     }        
     function save(){ 
-        //проверяем нажата ли разблокированныя кнопка и отправляем запрос
-        if($(this).hasClass('enable') === true){
+                text = $('#text').val();
+                date = $('#date').val();
+                subject = $('#subject').val();
+                img_path = $('#img_path').val();
+            var id = $('.id').html();
+        
            $.ajax({
                 url: '/ajax/news_change.php',
                 type: 'POST',
@@ -80,24 +84,20 @@ $(document).ready(function(){
                     subject: subject,
                     text: text,
                     img_path: img_path,
-                    id: $(this).siblings('.id').html()
+                    id: id,
                 }        
             })
             .done(function(response) {
-                text = "";
-                date = "";
-                subject = "";
-                img_path = "";
+                
                 var obj = JSON.parse(response);
-                //асинхронно обновляем значения таблицы
-                $(this).parent().after("<tr><td class='id'>" + obj['id'] + "</td><td class='date redact'><div>" + obj['date'] + "</div></td><td class='subject redact'><div>" + obj['subject'] + "</div></td><td class='text redact' width='450'><div>" + obj['text'] + "</div></td><td class='img_path redact'><div>" + obj['img_path'] + "</div></td><td>" + obj['love'] + "</td><td>" + obj['views'] + "</td><td class='save'>Сохранить</td><td class='delete'>Удалить</td></tr>");
-                //удаляем старые значения
-                $(this).parent().remove();
+                console.log(obj);
+               popUpClose();
+                document.location.href = 'http://blog.loc/admin/news';
             })
             .fail(function() {
                 console.log("Что-то на сервере не так"); 
             })          
-       }     
+            
     }   
     function add_news(){
         var add_date = $("#add_date").val();
@@ -116,6 +116,7 @@ $(document).ready(function(){
                 }        
             })
             .done(function(response) {
+            document.location.href = 'http://blog.loc/admin/news';
                 console.log(response);
             })
             .fail(function() {
@@ -125,22 +126,53 @@ $(document).ready(function(){
     function deleteNews(){
         console.log($(this).html);
     }
+    function showNewsPopUp(id){
+        $.ajax({
+                url: '/ajax/news_show.php',
+                type: 'POST',
+                data: {
+                    id: id
+                }        
+            })
+            .done(function(response) {
+                var obj = JSON.parse(response);
+            console.log(obj);
+//                //асинхронно обновляем значения таблицы
+                $('#date').val(obj['date']);
+                $('#subject').val(obj['subject']);
+                $('#text').val(obj['text']);
+                $('#img_path').val(obj['img_path']);
+            })
+            .fail(function() {
+                console.log("Что-то на сервере не так"); 
+            })          
+    }
+    function popUpShow(){
+        var id = $(this).parent().siblings('.id').html();
+        showNewsPopUp(id);
+        $('.blank').addClass('show');
+        $('.blank').removeClass('hidden');
+    }
+    function popUpClose(){
+        $(".blank").addClass('hidden');
+        $(".blank").removeClass('show');
+    }
     
     //редактирование полей таблицы
     $(document).on('click', '.redact', trToUnput);
 
     // сохранение изменений в БД
-    $(document).on('click', '.save', save);
+    $('.save').on('click', save);
     
     // удаление из БД
     $(document).on('click', '.delete', function (){
-        console.log($(this).parent().remove());
+        console.log($(this).parent().parent().remove());
         $.ajax({
                 url: '/ajax/delete_news.php',
                 type: 'POST',
                 context: this,
                 data: { 
-                    id: $(this).siblings('.id').html()
+                    id: $(this).parent().siblings('.id').html()
                 }        
             })
             .done(function(response) {
@@ -151,10 +183,18 @@ $(document).ready(function(){
             })          
     });
        
-        text = "";
-        date = "";
-        subject = "";
-        img_path = "";
+    //добавление в БД
     $("#add_btn").on('click', add_news);
+    
+    //открытиыие popUp окна редактирования новости
+    $(".edit").on('click', popUpShow);
+    
+    //закрытие popUp окна редактирования новости
+    $(".close").on('click', popUpClose);
+        
+    text = "";
+    date = "";
+    subject = "";
+    img_path = "";
 });
     

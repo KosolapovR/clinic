@@ -14,16 +14,14 @@
 class MainController 
 {
     private $model;
-    private $pdo;
     private $news;
     
-    public function __construct($pdo) {    
-        $this->pdo = $pdo;
-        $this->model = new \model\MainModel($this->pdo);
+    public function __construct() {    
+        $this->model = new \model\MainModel();
         $this->news = $this->model->getNews();  
     }
     public function actionIndex(){
-        $doctors = new \model\DoctorsModel($this->pdo);
+        $doctors = new \model\DoctorsModel();
         $doctors = $doctors->getDoctors(2);
         require_once ROOT . "/views/main.php";  
     }

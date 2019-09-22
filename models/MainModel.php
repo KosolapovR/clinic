@@ -16,13 +16,13 @@ namespace model;
 class MainModel 
 {
     private $pdo;
-    public function __construct(\PDO $pdo) 
+    public function __construct() 
     {
-        $this->pdo = $pdo;
+        $this->pdo = \lib\DBlink::getInstance();
     }
     public function getNews($quantity = 5) 
     {
-        $news_model = new \model\NewsModel($this->pdo);
+        $news_model = new \model\NewsModel();
         return $news_model->getNews();
     }
 }

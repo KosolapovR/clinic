@@ -17,7 +17,7 @@ class AuthModel {
                 throw new \exceptions\CannotAddToDBException();
                 die();
             }    
-            $stmtPhone = $pdo->prepare("INSERT INTO `users`(`login`, `phone`, `email`, `date`) VALUES (:login, :phone, :email, :date)");
+            $stmtPhone = \lib\DBlink::getInstance()->prepare("INSERT INTO `users`(`login`, `phone`, `email`, `date`) VALUES (:login, :phone, :email, :date)");
              
            
             $stmtPhone->execute(array(
@@ -34,7 +34,7 @@ class AuthModel {
             
             //Добавление в таблицу passwords
             try {
-                $stmt = $pdo->prepare("INSERT INTO `passwords`(`user`, `pass`) VALUES (:login, :password)");
+                $stmt = \lib\DBlink::getInstance()->prepare("INSERT INTO `passwords`(`user`, `pass`) VALUES (:login, :password)");
                 $pass = md5($password . SECRET_WORD);
                 $stmt->execute(array(
                 ':login' => $login,

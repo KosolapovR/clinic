@@ -2012,3 +2012,322 @@ Stack trace:
 #2 D:\OSPanel\domains\blog.loc\index.php(18): Router::run(Object(PDO))
 #3 {main}
   thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 54
+[22-Sep-2019 21:20:57 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:20:57 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:21:14 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:21:14 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:20
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:25:18 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:18 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:25:38 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\config\configuration.php:17
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(14): require_once()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\config\configuration.php on line 17
+[22-Sep-2019 21:26:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:14
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 14
+[22-Sep-2019 21:26:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:14
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 14
+[22-Sep-2019 21:26:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:14
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 14
+[22-Sep-2019 21:26:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:14
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 14
+[22-Sep-2019 21:26:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:14
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 14
+[22-Sep-2019 21:26:13 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\DBlink' not found in D:\OSPanel\domains\blog.loc\index.php:14
+Stack trace:
+#0 {main}
+  thrown in D:\OSPanel\domains\blog.loc\index.php on line 14
+[22-Sep-2019 21:26:26 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 19
+[22-Sep-2019 21:26:26 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(19): Router::run(NULL)
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:26:26 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 19
+[22-Sep-2019 21:26:33 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:26:33 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(NULL)
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(NULL)
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(NULL)
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(NULL)
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(NULL)
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:26:34 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:27:54 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:27:54 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(NULL)
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:27:54 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\index.php on line 20
+[22-Sep-2019 21:28:03 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(NULL)
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:28:03 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(NULL)
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:29:27 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\PDO' not found in D:\OSPanel\domains\blog.loc\classes\DBlink.php:11
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\DBlink.php(26): lib\DBlink->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(19): lib\DBlink::getInstance()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\DBlink.php on line 11
+[22-Sep-2019 21:29:27 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\PDO' not found in D:\OSPanel\domains\blog.loc\classes\DBlink.php:11
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\DBlink.php(26): lib\DBlink->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(19): lib\DBlink::getInstance()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\DBlink.php on line 11
+[22-Sep-2019 21:29:28 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\PDO' not found in D:\OSPanel\domains\blog.loc\classes\DBlink.php:11
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\DBlink.php(26): lib\DBlink->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(19): lib\DBlink::getInstance()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\DBlink.php on line 11
+[22-Sep-2019 21:29:28 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\PDO' not found in D:\OSPanel\domains\blog.loc\classes\DBlink.php:11
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\DBlink.php(26): lib\DBlink->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(19): lib\DBlink::getInstance()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\DBlink.php on line 11
+[22-Sep-2019 21:29:43 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\PDO' not found in D:\OSPanel\domains\blog.loc\classes\DBlink.php:11
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\DBlink.php(26): lib\DBlink->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(19): lib\DBlink::getInstance()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\DBlink.php on line 11
+[22-Sep-2019 21:29:43 Europe/Moscow] PHP Fatal error:  Uncaught Error: Class 'lib\PDO' not found in D:\OSPanel\domains\blog.loc\classes\DBlink.php:11
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\classes\DBlink.php(26): lib\DBlink->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(19): lib\DBlink::getInstance()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\DBlink.php on line 11
+[22-Sep-2019 21:30:29 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, instance of lib\DBlink given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(Object(lib\DBlink))
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(Object(lib\DBlink))
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(Object(lib\DBlink))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:30:29 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\MainModel::__construct() must be an instance of PDO, instance of lib\DBlink given, called in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 22 and defined in D:\OSPanel\domains\blog.loc\models\MainModel.php:19
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\MainController.php(22): model\MainModel->__construct(Object(lib\DBlink))
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(Object(lib\DBlink))
+#2 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(Object(lib\DBlink))
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 19
+[22-Sep-2019 21:31:25 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be an instance of PDO, instance of lib\DBlink given, called in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 25 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\MainModel.php(25): model\NewsModel->__construct(Object(lib\DBlink))
+#1 D:\OSPanel\domains\blog.loc\controllers\MainController.php(23): model\MainModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(Object(lib\DBlink))
+#3 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(Object(lib\DBlink))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[22-Sep-2019 21:31:26 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\NewsModel::__construct() must be an instance of PDO, instance of lib\DBlink given, called in D:\OSPanel\domains\blog.loc\models\MainModel.php on line 25 and defined in D:\OSPanel\domains\blog.loc\models\NewsModel.php:8
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\MainModel.php(25): model\NewsModel->__construct(Object(lib\DBlink))
+#1 D:\OSPanel\domains\blog.loc\controllers\MainController.php(23): model\MainModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(Object(lib\DBlink))
+#3 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(Object(lib\DBlink))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 8
+[22-Sep-2019 21:31:37 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method lib\DBlink::query() in D:\OSPanel\domains\blog.loc\models\NewsModel.php:42
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\MainModel.php(26): model\NewsModel->getNews()
+#1 D:\OSPanel\domains\blog.loc\controllers\MainController.php(23): model\MainModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(Object(lib\DBlink))
+#3 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(Object(lib\DBlink))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 42
+[22-Sep-2019 21:32:49 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method lib\DBlink::query() in D:\OSPanel\domains\blog.loc\models\NewsModel.php:42
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\MainModel.php(26): model\NewsModel->getNews()
+#1 D:\OSPanel\domains\blog.loc\controllers\MainController.php(23): model\MainModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(Object(lib\DBlink))
+#3 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(Object(lib\DBlink))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 42
+[22-Sep-2019 21:32:49 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method lib\DBlink::query() in D:\OSPanel\domains\blog.loc\models\NewsModel.php:42
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\MainModel.php(26): model\NewsModel->getNews()
+#1 D:\OSPanel\domains\blog.loc\controllers\MainController.php(23): model\MainModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(Object(lib\DBlink))
+#3 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(Object(lib\DBlink))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 42
+[22-Sep-2019 21:33:26 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method lib\DBlink::query() in D:\OSPanel\domains\blog.loc\models\NewsModel.php:42
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\MainModel.php(26): model\NewsModel->getNews()
+#1 D:\OSPanel\domains\blog.loc\controllers\MainController.php(23): model\MainModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(Object(lib\DBlink))
+#3 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(Object(lib\DBlink))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 42
+[22-Sep-2019 21:33:27 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method lib\DBlink::query() in D:\OSPanel\domains\blog.loc\models\NewsModel.php:42
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\models\MainModel.php(26): model\NewsModel->getNews()
+#1 D:\OSPanel\domains\blog.loc\controllers\MainController.php(23): model\MainModel->getNews()
+#2 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct(Object(lib\DBlink))
+#3 D:\OSPanel\domains\blog.loc\index.php(20): Router::run(Object(lib\DBlink))
+#4 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\NewsModel.php on line 42
+[22-Sep-2019 21:39:42 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Router::run(), 0 passed in D:\OSPanel\domains\blog.loc\index.php on line 19 and exactly 1 expected in D:\OSPanel\domains\blog.loc\core\Router.php:6
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(19): Router::run()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\core\Router.php on line 6
+[22-Sep-2019 21:39:43 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Router::run(), 0 passed in D:\OSPanel\domains\blog.loc\index.php on line 19 and exactly 1 expected in D:\OSPanel\domains\blog.loc\core\Router.php:6
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(19): Router::run()
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\core\Router.php on line 6
+[22-Sep-2019 21:40:54 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 16
+[22-Sep-2019 21:41:21 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 16
+[22-Sep-2019 21:41:39 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 16
+[22-Sep-2019 21:41:39 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 16
+[22-Sep-2019 21:42:11 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 16
+[22-Sep-2019 21:42:11 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 16
+[22-Sep-2019 21:42:14 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 16
+[22-Sep-2019 21:42:23 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26
+[22-Sep-2019 21:43:28 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\DoctorsController.php on line 17
+[22-Sep-2019 21:58:40 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 7
+[22-Sep-2019 21:58:41 Europe/Moscow] PHP Parse error:  syntax error, unexpected '::' (T_PAAMAYIM_NEKUDOTAYIM), expecting variable (T_VARIABLE) in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 7
+[22-Sep-2019 22:14:05 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to NewsController::actionView() must be of the type integer, object given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 47 and defined in D:\OSPanel\domains\blog.loc\controllers\NewsController.php:26
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): NewsController->actionView(Object(PDO), 5)
+#1 D:\OSPanel\domains\blog.loc\index.php(19): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\NewsController.php on line 26
+[22-Sep-2019 22:15:03 Europe/Moscow] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MainController::__construct(), 0 passed in D:\OSPanel\domains\blog.loc\core\Router.php on line 44 and exactly 1 expected in D:\OSPanel\domains\blog.loc\controllers\MainController.php:20
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(44): MainController->__construct()
+#1 D:\OSPanel\domains\blog.loc\index.php(19): Router::run(Object(PDO))
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 20
+[22-Sep-2019 22:15:36 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 21
+[22-Sep-2019 22:15:36 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 21
+[22-Sep-2019 22:15:37 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 21

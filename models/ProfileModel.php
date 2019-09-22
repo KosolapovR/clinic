@@ -6,7 +6,7 @@ class ProfileModel
 {
     public $user;
     
-    public function __construct(string $user, \PDO $pdo) 
+    public function __construct(string $user) 
     {
         $this->user = new \lib\Users($user);
             //динамическое заполнение полей профиля и сохранение
@@ -23,9 +23,9 @@ class ProfileModel
             header("Location: profile");
         } 
     }
-    public function showNotes(\lib\Users $user, \PDO $pdo)
+    public function showNotes(\lib\Users $user)
     {
-        return \lib\Queue::getNotesByUser($user, $pdo);
+        return \lib\Queue::getNotesByUser($user);
     }
     public function showLogin() 
     {

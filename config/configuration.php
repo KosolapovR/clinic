@@ -14,7 +14,8 @@ define("CLASSES", ROOT . "/classes");
 define("DSN", "mysql:host=blog.loc;dbname=blog");
 define("DB_USER", "root");
 define("DB_PASS", "");
-require_once  CORE . '/DBconnect.php';
+
+//require_once  CORE . '/DBconnect.php';
 require_once  ROOT . '/vendor/autoload.php';
 
 define("SECRET_WORD", "akuna matata");

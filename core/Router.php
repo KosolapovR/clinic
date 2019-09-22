@@ -3,7 +3,7 @@ require_once 'core/functions.php';
 
 class Router {
     
-    public static function run($pdo) {
+    public static function run() {
         //Считываем адрес из URI
         $uri = trim($_SERVER['REQUEST_URI'], "/");
       
@@ -41,10 +41,10 @@ class Router {
 
                     if(file_exists($controller_path)){
                         require_once $controller_path;
-                        $controller_object = new $controller($pdo);
+                        $controller_object = new $controller();
                         
                         if(method_exists($controller_object, $action)){ 
-                            $controller_object->$action($pdo, $param);
+                            $controller_object->$action($param);
                         } 
                         break;
                     } 

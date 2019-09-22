@@ -6,12 +6,12 @@ class AdminController
     private static $section;
     public function actionIndex(\PDO $pdo)
     {
-        $this->model = new model\AdminModel($pdo);
+        $this->model = new model\AdminModel(\lib\DBlink::getInstance());
         require_once VIEWS . '/admin.php';
     }
     public function actionView(\PDO $pdo)
     {
-        $this->model = new \model\NewsModel($pdo);
+        $this->model = new \model\NewsModel(\lib\DBlink::getInstance());
         $news = $this->model->getNews(15);
         $uri = trim($_SERVER['REQUEST_URI'], "/");
         $segments = explode('/', $uri);
@@ -25,9 +25,6 @@ class AdminController
             }
         } catch (exceptions\PageNotFoundException $exc) {
             $exc->getView();
-        }
-
-       
-        
+        }      
     }
 }
