@@ -9,6 +9,29 @@
     <script src="/js/admin_users.js"></script>
 </head>
 <body>
+<div class="blank hidden">
+    <div id="popUP">
+        <div class="close"></div>
+        <div class="inputs">
+          <table>
+              <tr class="table_top">
+               <th>Дата/время</th>
+               <th>Заголовок</th>
+               <th>Текст</th>
+               <th>img</th>
+           </tr>
+          </table>
+           <div class="fields">
+          
+            <input id="date" type="text">
+            <input id="subject" type="text">
+            <textarea name="" id="text" cols="5" rows="1"></textarea>
+            <input id="img_path" type="text">
+            </div>
+        </div>
+        <div class="save">Cохранить</div>
+    </div>
+</div>
 <div class="whrapper">
     <nav class="panel">
         <ul class="menu">
@@ -46,20 +69,20 @@
                <th>Заголовок</th>
                <th>Текст</th>
                <th>img</th>
-               <th>лайки</th>
-               <th>просмотры</th>
+               <th>like</th>
+               <th>view</th>
            </tr>
            <?php foreach($news as $col): ?>
            <tr class="id_<?=$col['id']?>">
                <td class="id"><?=$col['id']?></td>
-               <td class="date redact"><div><?=$col['date']?></div></td>
-               <td class="subject redact"><div><?=$col['subject']?></div></td>
-               <td class="text redact" width="450"><div><?=$col['text']?></div></td>
-               <td class="img_path redact"><div><?=$col['img_path']?></div></td>
+               <td class="date"><div><?=$col['date']?></div></td>
+               <td class="subject"><div><?=$col['subject']?></div></td>
+               <td class="text" width="450"><div><?=$col['text']?></div></td>
+               <td class="img_path"><div><?=$col['img_path']?></div></td>
                <td><?=$col['love']?></td>
                <td><?=$col['views']?></td>
-               <td class="save disable">Сохранить</td>
-               <td class="delete">Удалить</td>
+               <td><div class="edit"></div></td>
+               <td><div class="delete"></div></td>
            </tr>
            <?php endforeach;?>
        </table>

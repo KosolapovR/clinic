@@ -2,7 +2,7 @@
 
 class AuthController {
     
-    public function actionIndex(\PDO $pdo){
+    public function actionIndex(){
          //исходная страница до введения данных в форму
         if(!isset($_REQUEST['registration'])){
             $text_info = '';
@@ -10,7 +10,7 @@ class AuthController {
         // обработка введенных данных
         }else{         
             //Занят ли Логин 
-            if(model\LoginModel::userExists($_REQUEST['name'], $pdo)){ 
+            if(model\LoginModel::userExists($_REQUEST['name'])){ 
             //сохранение в переменную информационной строки
              $text_info = "<h4 class=\"text_info\">этот логин уже занят</h4>";
              include_once VIEWS . "/auth.php";

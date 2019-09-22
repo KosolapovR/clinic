@@ -11,9 +11,10 @@ error_reporting(E_ALL);
 
 // инициализируем константы путей, БД ...
 define("ROOT", dirname(__FILE__));
+
 require_once  ROOT . '/config/configuration.php';
 
 //запускаем роутер
-require_once  CORE . '/Router.php';   
-Router::run($pdo);
+require_once  CORE . '/Router.php';
+Router::run();
 

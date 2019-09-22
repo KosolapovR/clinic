@@ -14,8 +14,8 @@
 class DoctorsController {
     private $model;
     private $pdo;
-    public function actionIndex(\PDO $pdo){
-        $this->model = new \model\DoctorsModel($pdo);
+    public function actionIndex(){
+        $this->model = new \model\DoctorsModel();
         $doctors = $this->model->getDoctors();
         require_once VIEWS . "/doctors.php";
     }

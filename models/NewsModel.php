@@ -5,10 +5,10 @@ class NewsModel {
     private $pdo;
     private static $pdo_static;
     private $user;
-    public function __construct(\PDO $pdo) 
+    public function __construct() 
     {
-        self::$pdo_static = $pdo;
-        $this->pdo = $pdo;
+        self::$pdo_static = \lib\DBlink::getInstance();
+        $this->pdo = \lib\DBlink::getInstance();
         if(isset($_SESSION[session_id()])){
             $this->user = new \lib\Users($_SESSION[session_id()]);
         }

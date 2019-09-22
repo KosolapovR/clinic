@@ -15,8 +15,8 @@ namespace model;
  */
 class DoctorsModel {
     private $pdo;
-    public function __construct(\PDO $pdo) {
-        $this->pdo = $pdo;
+    public function __construct() {
+        $this->pdo = \lib\DBlink::getInstance();
     }
 
     public function getDoctors($quantity = 10){

@@ -9,8 +9,8 @@ namespace lib;
  */
 class Like {
     private $pdo;
-    public function __construct($pdo) {
-        $this->pdo = $pdo;
+    public function __construct() {
+        $this->pdo = \lib\DBlink::getInstance();
     }
     public function getLikesByUser(Users $user): array {
         $id = $user->getID();
