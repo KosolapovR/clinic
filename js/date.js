@@ -39,7 +39,7 @@ $(document).ready(function(){
 	// Отправляем запрос
 	$.ajax({
 		url: '/ajax/ajax.php',
-		type: 'POST',
+		type: 'POST', 
 		data: {date: $(this).val(),
         url: document.location.href}        
 	})
