@@ -2331,3 +2331,139 @@ Stack trace:
 [22-Sep-2019 22:15:36 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 21
 [22-Sep-2019 22:15:36 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 21
 [22-Sep-2019 22:15:37 Europe/Moscow] PHP Notice:  Undefined variable: pdo in D:\OSPanel\domains\blog.loc\controllers\MainController.php on line 21
+[23-Sep-2019 07:47:05 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to AdminController::actionView() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 47 and defined in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:12
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(19): Router::run()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 12
+[23-Sep-2019 07:47:06 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to AdminController::actionView() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 47 and defined in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:12
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(19): Router::run()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 12
+[23-Sep-2019 08:39:00 Europe/Moscow] PHP Notice:  Undefined index: img in D:\OSPanel\domains\blog.loc\views\admin_doctors.php on line 60
+[23-Sep-2019 08:39:00 Europe/Moscow] PHP Notice:  Undefined index: img in D:\OSPanel\domains\blog.loc\views\admin_doctors.php on line 60
+[23-Sep-2019 08:39:00 Europe/Moscow] PHP Notice:  Undefined index: img in D:\OSPanel\domains\blog.loc\views\admin_doctors.php on line 60
+[23-Sep-2019 08:39:00 Europe/Moscow] PHP Notice:  Undefined index: img in D:\OSPanel\domains\blog.loc\views\admin_doctors.php on line 60
+[23-Sep-2019 08:39:00 Europe/Moscow] PHP Notice:  Undefined index: img in D:\OSPanel\domains\blog.loc\views\admin_doctors.php on line 60
+[23-Sep-2019 08:52:28 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:52:28 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:52:28 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:52:28 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:52:28 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:02 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:02 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:02 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:02 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:02 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:10 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:10 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:10 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:10 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:10 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:11 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:19 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:19 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:19 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:19 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 08:58:19 Europe/Moscow] PHP Notice:  Undefined index:   img_path in D:\OSPanel\domains\blog.loc\views\admin_news.php on line 81
+[23-Sep-2019 09:10:40 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:10:40 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:00 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:00 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:02 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:02 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:04 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:04 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:08 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:08 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:13 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:13 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:56 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:12:56 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:13:33 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:13:33 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:14:27 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:14:27 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:14:29 Europe/Moscow] PHP Warning:  include_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:14:29 Europe/Moscow] PHP Warning:  include_once(): Failed opening 'D:\OSPanel\domains\blog.loc/views/ajax.php' for inclusion (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:15:13 Europe/Moscow] PHP Warning:  require_once(D:\OSPanel\domains\blog.loc/views/ajax.php): failed to open stream: No such file or directory in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 09:15:13 Europe/Moscow] PHP Fatal error:  require_once(): Failed opening required 'D:\OSPanel\domains\blog.loc/views/ajax.php' (include_path='.;d:/ospanel/modules/php/PHP_7.1-x64;d:/ospanel/modules/php/PHP_7.1-x64/PEAR/pear') in D:\OSPanel\domains\blog.loc\controllers\AjaxController.php on line 16
+[23-Sep-2019 11:54:51 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to LoginController::actionIndex() must be an instance of PDO, null given, called in D:\OSPanel\domains\blog.loc\core\Router.php on line 47 and defined in D:\OSPanel\domains\blog.loc\controllers\LoginController.php:6
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): LoginController->actionIndex(NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(19): Router::run()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\LoginController.php on line 6
+[23-Sep-2019 11:56:43 Europe/Moscow] PHP Notice:  Undefined index: login in D:\OSPanel\domains\blog.loc\controllers\AuthController.php on line 13
+[23-Sep-2019 11:56:43 Europe/Moscow] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to model\LoginModel::userExists() must be of the type string, null given, called in D:\OSPanel\domains\blog.loc\controllers\AuthController.php on line 13 and defined in D:\OSPanel\domains\blog.loc\models\LoginModel.php:25
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\controllers\AuthController.php(13): model\LoginModel::userExists(NULL)
+#1 D:\OSPanel\domains\blog.loc\core\Router.php(47): AuthController->actionIndex(NULL)
+#2 D:\OSPanel\domains\blog.loc\index.php(19): Router::run()
+#3 {main}
+  thrown in D:\OSPanel\domains\blog.loc\models\LoginModel.php on line 25
+[23-Sep-2019 12:18:59 Europe/Moscow] PHP Fatal error:  Cannot redeclare lib\Users::deleteUser() in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[23-Sep-2019 12:18:59 Europe/Moscow] PHP Fatal error:  Cannot redeclare lib\Users::deleteUser() in D:\OSPanel\domains\blog.loc\classes\Users.php on line 37
+[23-Sep-2019 12:19:23 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined method lib\Users::getAllUsers() in D:\OSPanel\domains\blog.loc\controllers\AdminController.php:16
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\core\Router.php(47): AdminController->actionView(NULL)
+#1 D:\OSPanel\domains\blog.loc\index.php(19): Router::run()
+#2 {main}
+  thrown in D:\OSPanel\domains\blog.loc\controllers\AdminController.php on line 16
+[23-Sep-2019 12:39:17 Europe/Moscow] PHP Notice:  Undefined variable: row in D:\OSPanel\domains\blog.loc\classes\Users.php on line 129
+[23-Sep-2019 12:39:17 Europe/Moscow] PHP Notice:  Undefined variable: row in D:\OSPanel\domains\blog.loc\classes\Users.php on line 129
+[24-Sep-2019 12:08:04 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function lib\fetchColumn() in D:\OSPanel\domains\blog.loc\classes\Category.php:9
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): lib\Category::getCountDoctors('hirurg')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Category.php on line 9
+[24-Sep-2019 12:08:04 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function lib\fetchColumn() in D:\OSPanel\domains\blog.loc\classes\Category.php:9
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): lib\Category::getCountDoctors('hirurg')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Category.php on line 9
+[24-Sep-2019 12:09:30 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function lib\fetch() in D:\OSPanel\domains\blog.loc\classes\Category.php:9
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): lib\Category::getCountDoctors('hirurg')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Category.php on line 9
+[24-Sep-2019 12:09:30 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function lib\fetch() in D:\OSPanel\domains\blog.loc\classes\Category.php:9
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): lib\Category::getCountDoctors('hirurg')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Category.php on line 9
+[24-Sep-2019 12:09:31 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function lib\fetch() in D:\OSPanel\domains\blog.loc\classes\Category.php:9
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): lib\Category::getCountDoctors('hirurg')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Category.php on line 9
+[24-Sep-2019 12:09:31 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function lib\fetch() in D:\OSPanel\domains\blog.loc\classes\Category.php:9
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): lib\Category::getCountDoctors('hirurg')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Category.php on line 9
+[24-Sep-2019 12:09:44 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function lib\fetchALL() in D:\OSPanel\domains\blog.loc\classes\Category.php:9
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): lib\Category::getCountDoctors('hirurg')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Category.php on line 9
+[24-Sep-2019 12:09:44 Europe/Moscow] PHP Fatal error:  Uncaught Error: Call to undefined function lib\fetchALL() in D:\OSPanel\domains\blog.loc\classes\Category.php:9
+Stack trace:
+#0 D:\OSPanel\domains\blog.loc\index.php(20): lib\Category::getCountDoctors('hirurg')
+#1 {main}
+  thrown in D:\OSPanel\domains\blog.loc\classes\Category.php on line 9
+[24-Sep-2019 12:09:51 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\classes\Category.php on line 10
+[24-Sep-2019 12:09:51 Europe/Moscow] PHP Notice:  Array to string conversion in D:\OSPanel\domains\blog.loc\classes\Category.php on line 10
+[24-Sep-2019 12:33:49 Europe/Moscow] PHP Parse error:  syntax error, unexpected ')' in D:\OSPanel\domains\blog.loc\classes\Queue.php on line 43

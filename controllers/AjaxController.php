@@ -13,7 +13,7 @@
  */
 class AjaxController {
     public function actionIndex(){
-        include_once VIEWS . "/ajax.php";
+        //require_once VIEWS . "/ajax.php";
     }
 
 }

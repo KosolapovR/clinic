@@ -22,6 +22,13 @@ $(document).ready(function(){
     }
     
     /*
+    *   Подсветка активной категории 
+    */
+    
+    var active_category = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
+    $('.' + active_category).children().css('background', '#55efc4');
+    
+    /*
     *   Отображение доступного времени записи 
     *   при выборе конкретной даты
     */
@@ -76,13 +83,13 @@ $(document).ready(function(){
             event.preventDefault();
 
             var date = $('#start').val(),
-                login = $('#login').html(),
+                login = $('#login').text(),
                 url = document.location.href;
             
                 console.log('Выбрана дата:' + date); 
                 console.log('Выбрано время:' + time); 
                 console.log('Выбран url:' + url);
-                console.log();
+                console.log('Выбран Login:' + login);
             // Отправляем запрос
             $.ajax({
                 url: '/ajax/add_to_queue.php',
@@ -99,7 +106,7 @@ $(document).ready(function(){
                 $(".time").remove();
                 console.log("Всё хорошо, сервер вернул ответ");
                 preventDoubleNote(response);
-               // showMsg(response);
+                showMsg(response);
                 
             })
             .fail(function() {

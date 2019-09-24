@@ -22,10 +22,7 @@ while($row = $stmt->fetch()){
     $count++;
 }
 
-
-
-
-$filename = "text.txt";
+$filename = "cron.txt";
 $fd = fopen($filename, "a+");
-fwrite($fd, "Новый cron отработал " . date("h:i:s") . "удалено $count записи/ей\r\n");
+fwrite($fd, date("Y-m-d H:i:s") . " удалено $count записи/ей неверифицированных пользователей\r\n");
 fclose($fd);

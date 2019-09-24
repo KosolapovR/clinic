@@ -82,7 +82,7 @@
                <td><?=$col['love']?></td>
                <td><?=$col['views']?></td>
                <td><div class="edit"></div></td>
-               <td><div class="delete"></div></td>
+               <td><div class="delete delete_news"></div></td>
            </tr>
            <?php endforeach;?>
        </table>

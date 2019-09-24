@@ -42,4 +42,35 @@
             <li><a href="http://blog.loc/admin/schedule">График</a></li>
         </ul>
     </nav>
-    <main></main>
+    <main>
+     <h1>Все пользователи</h1>
+     <table class="users">
+           <tr class="table_top">
+               <th>id</th>
+               <th>Дата</th>
+               <th>Login</th>
+               <th>Имя</th>
+               <th>Фамилия</th>
+               <th>Bday</th>
+               <th>phone</th>
+               <th>email</th>
+               <th>img</th>
+               <th>verifyed</th>
+           </tr>
+           <?php foreach($users as $col): ?>
+                <td class="id"><?=$col['id']?></td>
+               <td class="date"><div><?=$col['date']?></div></td>
+               <td class="login"><div><?=$col['login']?></div></td>
+               <td class="name"><div><?=$col['name']?></div></td>
+               <td class="surname"><div><?=$col['surname']?></div></td>
+               <td class="bday"><div><?=$col['bday']?></div></td>
+               <td class="phone"><div><?=$col['phone']?></div></td>
+               <td class="email"><div><?=$col['email']?></div></td>
+               <td class="img_path"><div><?=$col['img']?></div></td>
+               <td class="verifyed"><div><?=$col['verifyed']?></div></td>       
+               <td><div class="delete delete_user"></div></td>
+           </tr>
+           <?php endforeach;?>
+       </table>
+    </main>
+</body>

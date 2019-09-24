@@ -5,12 +5,18 @@
   box-sizing: border-box;
 font-family: montserrat, sans-serif;}
 
+body{
+    background: #F6F6F6;
+}
+
 a {
   text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
   color: inherit; }
 
 header {
-  background: #d9d9d9;
+  background: #C3C8D1;
   height: 60px; }
   header nav {
     margin: 0 auto;
@@ -27,7 +33,7 @@ header {
     justify-content: space-between;
     text-transform: uppercase; }
     header nav .nav_left {
-      width: 50%;
+      width: 40%;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
@@ -42,11 +48,13 @@ header {
       justify-content: space-between; }
       header nav .nav_left .sign_up {
         height: 100%;
-        padding: 20px 10px; }
+        }
         header nav .nav_left .sign_up:hover {
           background: #a6a6a6;
           cursor: pointer; }
     header nav ul {
+        margin-left: 30px;
+        width: 60%;
       display: -moz-flex;
       display: -ms-flex;
       display: -o-flex;
@@ -62,22 +70,23 @@ header {
       height: 100%; }
       header nav ul li {
         list-style: none;
-        padding: 20px;
-        height: 100%; }
+      
+        height: 100%; 
+        }
         header nav ul li:hover {
           background: #a6a6a6;
           cursor: pointer; }
 
 footer {
   height: 60px;
-  background: brown; }
+  background: #A1B2D1; }
   footer .whrapper {
     margin: 0 auto;
     max-width: 1360px;
     text-align: center; }
 
 main {
-    
+    padding: 15px;
     height: auto;
   margin: 0 auto;
   max-width: 1360px;
@@ -92,21 +101,46 @@ main {
   justify-content: space-between; }
   main aside {
     width: 300px;
-    background: #ddd; }
+     }
   main .left_bar {
     padding: 10px;
-    background: yellow; }
+      
+   }
+main .left_bar ul{
+    border: 1px solid #D4D4D4;
+     background: #fff;
+    padding: 5px;
+}
     main .left_bar ul li {
+     
       list-style: none;
       margin-bottom: 5px;
       border-bottom: 1px solid #888;
       padding: 20px 0 20px 0; }
+.label{
+    font-size: 14px;
+    background: #EFEFEF;
+    border: 1px solid #D4D4D4;
+    border-bottom: 0px solid #D4D4D4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: block;
+    width: 70%;
+    height: 30px;
+    padding: 5px 10px;
+}
   main .right_bar {
     padding: 10px;
-    background: red; }
-    main .right_bar .person_container .person_card {
+     }
+
+main .right_bar .persons{
+    padding: 5px;
+    background: #fff;
+      border: 1px solid #D4D4D4;
+}
+     .person_card {
       height: 220px;
-      background: yellow;
+     
       margin-bottom: 10px; 
 
 }
@@ -114,14 +148,42 @@ main {
     height: 170px;
 }
 .person_card .info_block{
-    background: #55F;
+
     width: 100%;
     height: 50px;
     text-align: center;
 }
   main section {
-    height: auto;
-    background: aqua;
+    padding: 10px;  
     width: 100%;
     text-align: center; }
+main section .label{
+    width: 30%;
+}
 
+.slider{
+    background: url(../img/slider/slide_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #D4D4D4;
+    height: 80vh;
+ 
+   
+}
+.account_icon{
+    
+    margin-right: 3px;
+        background: url(../img/icons/user-account-box.svg);
+        width: 15px;
+        height: 15px;
+     background-size: cover;
+      float: left;
+   
+    }
+.nav_right li a, .sign_up a{
+    padding: 20px;
+    display: block;
+    height: 100%;
+    
+   
+}

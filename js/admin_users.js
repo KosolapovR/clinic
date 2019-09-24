@@ -123,6 +123,32 @@ $(document).ready(function(){
                 console.log("Что-то на сервере не так"); 
             })          
     }
+    function add_doctor(){
+        var add_name = $("#add_name").val();
+        var add_desctiption = $("#add_desctiption").val();
+        var add_category = $("#add_category").val();
+        var add_img = $("#add_img").val();
+        $.ajax({
+                url: '/ajax/doc_add.php',
+                type: 'POST',
+                context: this,
+                data: {
+                    name: add_name,
+                    description: add_desctiption,
+                    category: add_category,
+                    img_path: add_img, 
+                }        
+            })
+            .done(function(response) {
+            document.location.href = 'http://blog.loc/admin/doctors';
+            
+               
+            
+            })
+            .fail(function() {
+                console.log("Что-то на сервере не так"); 
+            })          
+    }
     function deleteNews(){
         console.log($(this).html);
     }
@@ -164,8 +190,8 @@ $(document).ready(function(){
     // сохранение изменений в БД
     $('.save').on('click', save);
     
-    // удаление из БД
-    $(document).on('click', '.delete', function (){
+    // удаление новости из БД
+    $(document).on('click', '.delete_news', function (){
         console.log($(this).parent().parent().remove());
         $.ajax({
                 url: '/ajax/delete_news.php',
@@ -182,9 +208,48 @@ $(document).ready(function(){
                 console.log("Что-то на сервере не так"); 
             })          
     });
-       
-    //добавление в БД
+     // удаление пользователя из БД
+    $(document).on('click', '.delete_user', function (){
+        console.log($(this).parent().siblings('.id').html());
+        console.log($(this).parent().parent().remove());
+        $.ajax({
+                url: '/ajax/delete_user.php',
+                type: 'POST',
+                context: this,
+                data: { 
+                    login: $(this).parent().siblings('.login').children().html()
+                }        
+            })
+            .done(function(response) {
+                console.log(response);
+            })
+            .fail(function() {
+                console.log("Что-то на сервере не так"); 
+            })          
+    });
+    // удаление доктора из БД
+    $(document).on('click', '.delete_doctors', function (){    
+        $.ajax({
+                url: '/ajax/delete_doc.php',
+                type: 'POST',
+                context: this,
+                data: { 
+                    id: $(this).parent().siblings('.id').html()
+                }        
+            })
+            .done(function(response) {
+                $(this).parent().parent().remove();
+            console.log(response);
+            })
+            .fail(function() {
+                console.log("Что-то на сервере не так"); 
+            })          
+    });
+    //добавление в БД новостей
     $("#add_btn").on('click', add_news);
+    
+    //добавление в БД докторов
+    $("#add_doc_btn").on('click', add_doctor);
     
     //открытиыие popUp окна редактирования новости
     $(".edit").on('click', popUpShow);

@@ -57,7 +57,7 @@
               <li><a href="http://blog.loc/doctors">наши сотрудники</a></li>
               <?php if($_SERVER['REQUEST_URI'] != '/profile'):?>
               <?php if(isset($_SESSION[session_id()])):?>
-              <li><a href="/profile">личный кабинет <p id="login"><?=$_SESSION[session_id()]?></p></a></li>
+              <li><a id="login" href="/profile"><?=$_SESSION[session_id()]?><div class="account_icon"></div></a></li>
               <?php endif; ?>
               <?php endif; ?>
               <?php if(isset($_SESSION[session_id()])):?>

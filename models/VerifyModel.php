@@ -14,6 +14,9 @@ class VerifyModel
             header("Location: main");
             exit();
         } else {
+            echo $user->getVerifyCode();
+            echo "<br>";
+            echo $code;
             echo 'несовпадение кодов';
         }
   

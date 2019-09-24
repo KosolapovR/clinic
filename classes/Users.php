@@ -22,9 +22,25 @@ class Users {
         $this->password = $password;
         $this->tel = $tel;
         $this->email = $email;
-        
-        
     }
+    
+    public static function deleteUser($login)
+    {
+         
+        try {
+           \lib\DBlink::getInstance()->query("DELETE FROM `users` WHERE `login`='{$login}'"); 
+           \lib\DBlink::getInstance()->query("DELETE FROM `passwords` WHERE `user`='{$login}'"); 
+           return true;
+        } catch (Exception $exc) {
+            echo $exc->getTraceAsString();
+            return false;
+        }
+    }
+    public static function getAllUsers():Array
+    {
+        return \lib\DBlink::getInstance()->query("SELECT * FROM `users`")->fetchAll();   
+    }
+
     public function getLogin(): string 
     {
         return $this->login;
