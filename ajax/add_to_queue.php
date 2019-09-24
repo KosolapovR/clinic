@@ -19,16 +19,8 @@ foreach ($notes as $col) {
         $in_array = true;
     }
 }
-if(!$in_array){
-   \lib\Queue::addQueue($date, $time, $category, $user, $doctor); 
-} else {
-    echo json_encode($in_array);
-    die();
-}
-
 //выбираем случайного доктора со свободным указанным временем
 $doctors = \lib\DBlink::getInstance()->query("SELECT `name` FROM doctors WHERE `category` = '{$category}'")->fetchAll();
-
 $doctor = $doctors[rand(0, count($doctors) - 1)]['name']; 
 $doc = new \lib\Doctor($doctor);
 
@@ -37,6 +29,17 @@ while(!$doc->isAvailableTime($date, $time)){
     $doctor = $doctors[rand(0, count($doctors) - 1)]['name']; 
     $doc = new \lib\Doctor($doctor);
 }
+if(!$in_array){
+   \lib\Queue::addQueue($date, $time, $category, $user, $doctor); 
+} else {
+    echo json_encode($in_array);
+    die();
+}
+
+
+
+
+
 
 if(\lib\DBlink::getInstance()->query("SELECT * FROM queue WHERE `doctor` = '{$doctor}' AND `date` = '{$date}' AND `time` = '{$time}'")->fetch()){
     echo 1;
