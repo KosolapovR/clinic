@@ -10,6 +10,7 @@
     <script src="/js/jQuery.js"></script>
     <script src="/js/popUp.js"></script>
     <script src="/js/ajax_update.js"></script>
+    <script src="/js/profile.js"></script>
     <?php endif; ?>
     <?php if(preg_match("/news/", $_SERVER['REQUEST_URI'])):?>
     <link rel="stylesheet" href="/css/news.css">

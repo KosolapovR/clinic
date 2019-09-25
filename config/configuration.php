@@ -17,6 +17,7 @@ define("DB_PASS", "");
 
 //require_once  CORE . '/DBconnect.php';
 require_once  ROOT . '/vendor/autoload.php';
+require_once  CORE . '/functions.php';
 
 define("SECRET_WORD", "akuna matata");
 

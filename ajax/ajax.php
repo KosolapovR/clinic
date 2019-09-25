@@ -2,9 +2,15 @@
 session_start();
 define("ROOT", dirname(__DIR__));
 require_once  ROOT . '/config/configuration.php';
+
 //выделяем категорию специалиста из URL
-$segments = explode('/', $_REQUEST['url']);
-$category = array_pop($segments);
+$category = '';
+if($_REQUEST['url'] == "http://blog.loc/admin/schedule"){
+    $category = $_REQUEST['category'];
+} else {
+    $segments = explode('/', $_REQUEST['url']);
+    $category = array_pop($segments);
+}
 $date = $_REQUEST['date'];
 
 

@@ -226,6 +226,19 @@ table .row td:last-child:hover{
 #notes td{
     background: #fff;
     border-radius: 5px;
-     border: 1px solid #E3E4E8;
+    border: 1px solid #E3E4E8;
     text-align: center;
+}
+#notes .delete_note{
+    background: url(../img/icons/delete.svg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    border: 0px solid #E3E4E8;
+    height: 18px;
+    width: 20px;
+    cursor: pointer;
+    
+}
+#notes .delete_note:hover{
+filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }

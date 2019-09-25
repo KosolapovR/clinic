@@ -118,8 +118,9 @@ h1{
     background: #99D;
     border-bottom: 2px solid #559;
 }
-table.news, table.users{
-    margin-top: 40px;
+table.news, table.users, table.shedule{
+    margin: 20px 0;
+    
     width: 100%;
     text-align: left;
   border-collapse: collapse;
@@ -131,13 +132,13 @@ table.news, table.users{
     height: 50px;
   
 }
-.news tr th, .users tr th{
+.news tr th, .users tr th, .shedule tr th{
     color: #EDB749;
       text-align: center;
     text-transform: uppercase;
     font-size: 12px;
 }
-.news tr td, .users tr td{
+.news tr td, .users tr td, .shedule tr td{
       color: #CAD4D6;
     text-align: center;
     font-size: 14px;
@@ -148,14 +149,14 @@ table.news, table.users{
     overflow-x: hidden;
     
 }
-.news tr td div, .users tr td div{
+.news tr td div, .users tr td div, .shedule tr td div{
     color: inherit;
 }
-.news tr:first-child, .users tr:first-child{
+.news tr:first-child, .users tr:first-child, .shedule tr:first-child{
     border-bottom: 1px solid #37B5A5;
 
 }
-.news tr>td:first-child, .users tr>td:first-child{
+.news tr>td:first-child, .users tr>td:first-child, .shedule tr>td:first-child{
     
     width: 60px;
     

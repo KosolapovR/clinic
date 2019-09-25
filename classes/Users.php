@@ -48,7 +48,14 @@ class Users {
     }
     public function getID(): string 
     {
-        $this->id = $this->pdo->query("SELECT `id` FROM `users` WHERE `login`='{$this->login}'")->fetch();
+        try {
+            $this->id = $this->pdo->query("SELECT `id` FROM `users` WHERE `login`='{$this->login}'")->fetch();
+        } catch (\PDOexception $exc) {
+            echo $exc->getTraceAsString();
+            die();
+        }
+
+        
         return $this->id['id'];
         
     }

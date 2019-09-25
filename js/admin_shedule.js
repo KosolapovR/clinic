@@ -1,52 +1,113 @@
 $(document).ready(function(){
     
+    var category;
     function popUpPreventDoubleNote(){
     $('.hidden_double_popUp').addClass('prevent_double_notes');
     $('.hidden_double_popUp').removeClass('hidden_double_popUp');
     }
-    
     $('#close').on('click', function(){
     $('.prevent_double_notes').addClass('hidden_double_popUp');
     $('.prevent_double_notes').removeClass('prevent_double_notes');
     })
-    
-    function showMsg($msg){
-        console.log($msg);
-       
-    }
     function preventDoubleNote($msg){
       
         if($msg == 'true'){
             popUpPreventDoubleNote();
         }
     }
+    $('.categories li').on('click', function(){
+       category = $(this).attr('id');
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+        $('.times').css('border', '1px solid #636e72');
+        
+    });
     
     /*
-    *   Подсветка активной категории 
+    * сохранение данных в формате CSV
     */
+    $('.csv').on('click', function(){
+        let data = [];
+        let id = $('tr.rows').children('.id');
+        for(let i = 0; i< $('.rows').length; i++){
+           
+            data.push(id[i].innerHTML);
+            
+        }
+        //console.log(data);
+        //data = JSON.stringify(data);
+        //console.log(data);
     
-    var active_category = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
-    $('.' + active_category).children().css('background', '#55efc4');
-    
+       
+        $.ajax({
+                url: '/ajax/csv.php',
+                type: 'POST',
+                data: {
+                    data: data,         
+                }
+            })
+            .done(function(response) {
+                console.log("Всё хорошо, сервер вернул ответ"); 
+            console.log(response);
+            })
+            .fail(function() {
+                console.log("Что-то на сервере не так");
+            });
+    });
     /*
-    *   Отображение доступного времени записи 
-    *   при выборе конкретной даты
+    * фильтрация данных таблицы записей
     */
-    
+    $('.filter').on('change', function(){
+        let category = ($('#category_select').val());
+        let doctor = ($('#doctor_select').val());
+        let user = ($('#user_select').val());
+        let date = ($('#date_select').val());
+        let time = ($('#time_select').val());
+// Отправляем запрос
+        $.ajax({
+                url: '/ajax/get_data_queue.php',
+                type: 'POST',
+                data: {
+                    date: date,
+                    time: time,
+                    login: user,
+                    doctor: doctor,
+                    category: category
+                }
+            })
+            .done(function(response) {
+               
+                console.log("Всё хорошо, сервер вернул ответ");
+                let notes = JSON.parse(response);
+            $('.shedule .rows').remove();
+                for(let key in notes){
+                    notes[key]['id'];
+                    $('.shedule').append('<tr class="rows"><td class="id">' + notes[key]['id'] + '</td><td>' + notes[key]['category'] + '</td><td>' + notes[key]['doctor'] + '</td><td>' + notes[key]['user'] + '</td><td>' + notes[key]['date'] + '</td><td>' + notes[key]['time'] + '</td><td><div class="delete delete_note"></div></td></tr>');
+                }
+               
+            })
+            .fail(function() {
+                console.log("Что-то на сервере не так");
+            });
+    });          
+    /*
+    * Выбор даты
+    */
+ 
     $('#start').on('change', function(event) {
-	console.log('Выбрана дата:' + $(this).val());
-    
 	// Отправляем запрос
 	$.ajax({
 		url: '/ajax/ajax.php',
 		type: 'POST', 
 		data: {date: $(this).val(),
-        url: document.location.href}        
+        url: document.location.href,
+        category: category,
+        login: $('select').val()}        
 	})
 	.done(function(response) {
         $(".time").remove();
 		console.log("Всё хорошо, сервер вернул ответ");
-        showMsg(JSON.parse(response));
+        console.log((response));
         var array = JSON.parse(response);
         for(var i = 0; i < array.length; ++i){
             
@@ -56,8 +117,7 @@ $(document).ready(function(){
 	.fail(function() {
 		console.log("Что-то на сервере не так"); 
 	});
-})
-    
+        
     /*
     *    подтверждение выбора времени
     */
@@ -83,7 +143,7 @@ $(document).ready(function(){
             event.preventDefault();
 
             var date = $('#start').val(),
-                login = $('#login').text(),
+                login = $('select').val(),
                 url = document.location.href;
             
                 console.log('Выбрана дата:' + date); 
@@ -99,15 +159,15 @@ $(document).ready(function(){
                     url: url,
                     time: time,
                     session: document.cookie,
-                    login: login
-                    
+                    login: login,
+                    category: category
                 }
             })
             .done(function(response) {
                 $(".time").remove();
                 console.log("Всё хорошо, сервер вернул ответ");
                 preventDoubleNote(response);
-                showMsg(response);
+                console.log(response);
                 
             })
             .fail(function() {
@@ -117,15 +177,6 @@ $(document).ready(function(){
                 $('.show_popUp').addClass('hidden_popUp');
                 $('.show_popUp').removeClass('show_popUp');
         })  
-        
-        //отмена выбора времени
-        
-        $('#no').off('click');
-        $('#no').on('click', function(event){
-            event.preventDefault();
-            // popUp окнo
-            $('.show_popUp').addClass('hidden_popUp');
-            $('.show_popUp').removeClass('show_popUp');
-        })
-     })  
+})
+});
 });

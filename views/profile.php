@@ -76,6 +76,7 @@
                   <td><?=$col['time']?></td>
                   <td><?=$col['category']?></td>
                   <td><?=$col['doctor']?></td>
+                  <td class="delete_note" data="<?=$col['id']?>"></td>
               </tr>
               <?php endforeach;?>
           </table>

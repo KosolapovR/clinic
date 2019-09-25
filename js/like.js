@@ -11,8 +11,8 @@ $(document).ready(function(){
         }
         return jsId;
     }
-    var login = $('#login').html();
-    
+    var login = $('#login').text();
+
     function updateLike(response){
            $(this).siblings('.number_of_like').html(response); 
            $(this).siblings('.number_of_like').css('color', '#D75A4A');

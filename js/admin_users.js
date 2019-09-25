@@ -208,6 +208,23 @@ $(document).ready(function(){
                 console.log("Что-то на сервере не так"); 
             })          
     });
+    // удаление записей из БД
+    $(document).on('click', '.delete_note', function (){
+        console.log($(this).parent().parent().remove());
+        $.ajax({
+                url: '/ajax/delete_note.php',
+                type: 'POST',
+                context: this,
+                data: { 
+                    id: $(this).parent().siblings('.id').html()
+                }        
+            })
+            .done(function(response) {        
+            })
+            .fail(function() {
+                console.log("Что-то на сервере не так"); 
+            })          
+    });
      // удаление пользователя из БД
     $(document).on('click', '.delete_user', function (){
         console.log($(this).parent().siblings('.id').html());

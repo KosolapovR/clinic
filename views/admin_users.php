@@ -58,6 +58,7 @@
                <th>verifyed</th>
            </tr>
            <?php foreach($users as $col): ?>
+               <tr>
                 <td class="id"><?=$col['id']?></td>
                <td class="date"><div><?=$col['date']?></div></td>
                <td class="login"><div><?=$col['login']?></div></td>
@@ -67,7 +68,7 @@
                <td class="phone"><div><?=$col['phone']?></div></td>
                <td class="email"><div><?=$col['email']?></div></td>
                <td class="img_path"><div><?=$col['img']?></div></td>
-               <td class="verifyed"><div><?=$col['verifyed']?></div></td>       
+               <td class="verifyed"><div><?=$col['verifyed']?></div></td>     
                <td><div class="delete delete_user"></div></td>
            </tr>
            <?php endforeach;?>
