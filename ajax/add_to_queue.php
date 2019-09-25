@@ -23,7 +23,6 @@ $in_array = false;
 foreach ($notes as $col) {
     if($category == $col['category']){
         $in_array = true;
-        die('уже есть запись'); 
    }
 }
 //выбираем случайного доктора со свободным указанным временем

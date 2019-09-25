@@ -9,7 +9,7 @@ namespace lib;
  */
 class Queue 
 {
-    public static function getNotes($category = '%', $doctor = '%', $user = '%', $date = '%', $time = '%'){
+    public static function getNotes($date = '%', $category = '%', $doctor = '%', $user = '%', $time = '%'){
         $query  = "SELECT * FROM queue WHERE category LIKE ? AND doctor LIKE ? AND user LIKE ? AND date LIKE ? AND time LIKE ?";
         $params = array("%$category%", "%$doctor%", "%$user%", "%$date%", "%$time%");
         $stmt = \lib\DBlink::getInstance()->prepare($query);

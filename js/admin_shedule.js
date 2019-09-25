@@ -34,21 +34,17 @@ $(document).ready(function(){
             data.push(id[i].innerHTML);
             
         }
-        //console.log(data);
-        //data = JSON.stringify(data);
-        //console.log(data);
-    
-       
         $.ajax({
                 url: '/ajax/csv.php',
                 type: 'POST',
                 data: {
                     data: data,         
                 }
-            })
+        })
             .done(function(response) {
                 console.log("Всё хорошо, сервер вернул ответ"); 
             console.log(response);
+                document.location = 'http://blog.loc/core/csv.php';
             })
             .fail(function() {
                 console.log("Что-то на сервере не так");
@@ -96,27 +92,28 @@ $(document).ready(function(){
  
     $('#start').on('change', function(event) {
 	// Отправляем запрос
-	$.ajax({
-		url: '/ajax/ajax.php',
-		type: 'POST', 
-		data: {date: $(this).val(),
-        url: document.location.href,
-        category: category,
-        login: $('select').val()}        
-	})
-	.done(function(response) {
-        $(".time").remove();
-		console.log("Всё хорошо, сервер вернул ответ");
-        console.log((response));
-        var array = JSON.parse(response);
-        for(var i = 0; i < array.length; ++i){
-            
-            $(".times").append("<p class=\"time\">" + array[i] + "</p>");
-        }        
-	})
-	.fail(function() {
-		console.log("Что-то на сервере не так"); 
-	});
+        
+    	$.ajax({
+    		url: '/ajax/ajax.php',
+    		type: 'POST', 
+    		data: {date: $(this).val(),
+            url: document.location.href,
+            category: category,
+            login: $('#User_select').val()}        
+    	})
+    	.done(function(response) {
+            $(".time").remove();
+    		console.log("Всё хорошо, сервер вернул ответ");
+            console.log((response));
+            var array = JSON.parse(response);
+            for(var i = 0; i < array.length; ++i){
+                
+                $(".times").append("<p class=\"time\">" + array[i] + "</p>");
+            }        
+    	})
+    	.fail(function() {
+    		console.log("Что-то на сервере не так"); 
+    	});
         
     /*
     *    подтверждение выбора времени
@@ -143,7 +140,7 @@ $(document).ready(function(){
             event.preventDefault();
 
             var date = $('#start').val(),
-                login = $('select').val(),
+                login = $('#User_select').val(),
                 url = document.location.href;
             
                 console.log('Выбрана дата:' + date); 

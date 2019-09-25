@@ -2649,3 +2649,4 @@ Stack trace:
 [25-Sep-2019 12:17:20 Europe/Moscow] PHP Warning:  Illegal string offset 'category' in D:\OSPanel\domains\blog.loc\views\admin_schedule.php on line 63
 [25-Sep-2019 12:17:20 Europe/Moscow] PHP Warning:  Illegal string offset 'category' in D:\OSPanel\domains\blog.loc\views\admin_schedule.php on line 63
 [25-Sep-2019 12:17:20 Europe/Moscow] PHP Warning:  Illegal string offset 'category' in D:\OSPanel\domains\blog.loc\views\admin_schedule.php on line 63
+[25-Sep-2019 20:19:40 Europe/Moscow] PHP Notice:  Undefined index: kav02e38u0dq4h8q5h942eqsf8elq55v in D:\OSPanel\domains\blog.loc\controllers\ReservationController.php on line 10
