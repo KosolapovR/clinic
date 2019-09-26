@@ -1,3 +1,4 @@
 id,Категория,Доктор,Дата,Время,Пациент
-84,nevrolog,"Olga Rec",2019-09-27,13:30:00,Aksidin
-85,stomatolog,"Igor Sid",2019-09-25,20:30:00,Aksidin
+77,hirurg,"Pavel Osipov",2019-09-26,13:00:00,root
+79,terapevt,"Alla Petrova",2019-09-29,17:30:00,root
+80,nevrolog,"Olga Rec",2019-09-26,10:30:00,root

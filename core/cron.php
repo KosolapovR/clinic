@@ -5,14 +5,10 @@ define("DB_USER", "root");
 define("DB_PASS", "");
     try {
         $pdo = new PDO(DSN, DB_USER, DB_PASS);
-        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-        
+        $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);        
 } catch (PDOException $ex) {
        echo $ex->getMessage(); 
 }
-
-//$stmt = $pdo->prepare("DELETE FROM users WHERE verifyed!=0");
-//$result = $stmt->execute();
 $stmt = $pdo->query("SELECT * FROM users WHERE verifyed='0'");
 $count = 0;
 while($row = $stmt->fetch()){
@@ -22,7 +18,7 @@ while($row = $stmt->fetch()){
     $count++;
 }
 
-$filename = "cron.txt";
+$filename = "../logs/cron.txt";
 $fd = fopen($filename, "a+");
 fwrite($fd, date("Y-m-d H:i:s") . " удалено $count записи/ей неверифицированных пользователей\r\n");
 fclose($fd);

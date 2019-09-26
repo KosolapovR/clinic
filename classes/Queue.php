@@ -9,15 +9,21 @@ namespace lib;
  */
 class Queue 
 {
-    public static function getNotes($date = '%', $category = '%', $doctor = '%', $user = '%', $time = '%'){
-        $query  = "SELECT * FROM queue WHERE category LIKE ? AND doctor LIKE ? AND user LIKE ? AND date LIKE ? AND time LIKE ?";
+    public static function getNotes($date = '%', $category = '%', $doctor = '%', $user = '%', $time = '%', $table = 'queue'){
+        $query  = "SELECT * FROM {$table} WHERE category LIKE ? AND doctor LIKE ? AND user LIKE ? AND date LIKE ? AND time LIKE ?";
         $params = array("%$category%", "%$doctor%", "%$user%", "%$date%", "%$time%");
         $stmt = \lib\DBlink::getInstance()->prepare($query);
         $stmt->execute($params);
         $res = $stmt->fetchAll();
         return $res;
     }
-
+    public static function getArcheveNotes(): array{
+        return \lib\DBlink::getInstance()->query("SELECT * FROM archeve WHERE 1")->fetchAll();
+    }
+    public static function getArcheveNotesByID($id){
+        $stmt = \lib\DBlink::getInstance()->query("SELECT * FROM `archeve` WHERE `queue_id`='{$id}'");
+        return $stmt->fetchAll();
+    }
     public static function getAllNotes(): array{
         return \lib\DBlink::getInstance()->query("SELECT * FROM queue WHERE 1")->fetchAll();
     }

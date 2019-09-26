@@ -9,11 +9,14 @@
                 <div class="icon_block">
                     <div class="date"><?=$news['date']?></div>
                     <?php
+                    if(isset($likes_current_user)){
                         foreach ($likes_current_user as $field){
                         if($like['id'] == $field['news_id']){
                         $like_red = true;
                         break;
                         }
+                    }
+                        
                     } ?>
                     <?php if($like_red): ?>
                     <div class="like" style="background: url(../img/icons/like.svg)"><?=$like['id']?></div>

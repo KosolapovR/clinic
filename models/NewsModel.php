@@ -51,9 +51,11 @@ class NewsModel {
     // Что бы один юзер не мог обновлять просмотры чаще чем раз в 60 * 60 сек
     // Создаем сессию с привязкой к конкретной новости и конкретному юзеру
     // Кладем в нее время просмотра нововости
-    public function updateViews($id, \lib\Users $user):bool
+    public function updateViews($id, $user):bool
     { 
-        $time = new \DateTime();
+        //если новость читает неавторизованный пользователь
+        if($user instanceof \lib\Users){
+            $time = new \DateTime();
 
         // если сессии еще не существует (юзер первый раз смотрит новость)
         if(!isset($_SESSION['last_view' . $id . "user_id" . $user->getID()])){
@@ -80,7 +82,11 @@ class NewsModel {
                 return true;
             } else {
                 return false;
-            }        
+            }   
+        } else{
+            return false;
+        }
+             
     }
     //Редактирование новостей в админпанеле
     public function updateNews($id, array $data):bool

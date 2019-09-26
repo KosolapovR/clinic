@@ -1,6 +1,9 @@
 .filters{
     background: #888;
 }
+select{
+    cursor: pointer;
+}
 .csv{
     background: url(../img/icons/file.svg);
     -webkit-background-size: cover;

@@ -46,7 +46,7 @@
     </nav>
     <main>
      <h1>Все записи</h1>
-     <table class="shedule">
+     <table class="shedule shedule_active">
            <tr class="table_top">
                <th>id</th>
                <th>Категория</th>
@@ -54,11 +54,12 @@
                <th>Пациент</th>
                <th>Дата</th>
                <th>Время</th>
-               <th class="csv"></th>
+               <th title="Скачать в формате CSV" class="csv"></th>
            </tr>
            <tr class="filters">
                <td>Фильтры:</td>
-               <td><select class="filter" name="category" id="category_select">
+               <td>
+                        <select class="filter" name="category" id="category_select">
                          <option value="все">все</option>
                           <?php foreach($uniq_category as $val): ?> 
                            <option value="<?=$val?>"><?=$val?></option>
@@ -97,7 +98,7 @@
                <td class="user"><div><?=$col['user']?></div></td>
                <td class="date"><div><?=$col['date']?></div></td>
                <td class="time_tb"><div><?=$col['time']?></div></td>
-               <td><div class="delete delete_note"></div></td>
+               <td><div title="Удалить" class="delete delete_note"></div></td>
            </tr>
            <?php endforeach;?>
        </table>
@@ -147,4 +148,60 @@
        </div>
        <p>Вы уже записаны к этому специалисту, отмените ранее сделанную запись или выберите другого специалиста</p>
     </div>
+    <h1>Архивные записи</h1>
+     <table class="shedule shedule_arch">
+           <tr class="table_top">
+               <th>id</th>
+               <th>Категория</th>
+               <th>Доктор</th>
+               <th>Пациент</th>
+               <th>Дата</th>
+               <th>Время</th>
+               <th title="Скачать в формате CSV" class="csv csv-arch"></th>
+           </tr>
+           <tr class="filters arch_filter">
+               <td>Фильтры:</td>
+               <td><select class="filter arch_filter" name="category" id="category_arch_select">
+                         <option value="все">все</option>
+                          <?php foreach($uniq_arch_category as $val): ?> 
+                           <option value="<?=$val?>"><?=$val?></option>
+                          <?php endforeach; ?>
+                     </select></td>
+               <td><select class="filter arch_filter" name="doctor" id="doctor_arch_select">
+                         <option value="все">все</option>
+                          <?php foreach($uniq_arch_doctor as $val): ?>
+                           <option value="<?=$val?>"><?=$val?></option>
+                          <?php endforeach; ?>
+                     </select></td>
+               <td><select class="filter arch_filter" name="user" id="user_arch_select">
+                          <option value="все">все</option>
+                          <?php foreach($uniq_arch_user as $val): ?>
+                           <option value="<?=$val?>"><?=$val?></option>
+                          <?php endforeach; ?>
+                     </select></td>
+               <td><select class="filter arch_filter" name="date" id="date_arch_select">
+                         <option value="все">все</option>
+                          <?php foreach($uniq_arch_date as $val): ?>
+                           <option value="<?=$val?>"><?=$val?></option>
+                          <?php endforeach; ?>
+                     </select></td>
+               <td><select class="filter arch_filter" name="time" id="time_arch_select">
+                         <option value="все">все</option>
+                          <?php foreach($uniq_arch_time as $val): ?>
+                           <option value="<?=$val?>"><?=$val?></option>
+                          <?php endforeach; ?>
+                     </select></td>
+           </tr>
+           <?php foreach($archeveNotes as $col): ?>
+               <tr class="rows">
+                <td class="id"><?=$col['queue_id']?></td>
+               <td class="category"><div><?=$col['category']?></div></td>
+               <td class="doctor"><div><?=$col['doctor']?></div></td>
+               <td class="user"><div><?=$col['user']?></div></td>
+               <td class="date"><div><?=$col['date']?></div></td>
+               <td class="time_tb"><div><?=$col['time']?></div></td>
+               <td></td>
+           </tr>
+           <?php endforeach;?>
+       </table>
     </main>

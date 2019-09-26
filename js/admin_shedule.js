@@ -8,7 +8,7 @@ $(document).ready(function(){
     $('#close').on('click', function(){
     $('.prevent_double_notes').addClass('hidden_double_popUp');
     $('.prevent_double_notes').removeClass('prevent_double_notes');
-    })
+    });
     function preventDoubleNote($msg){
       
         if($msg == 'true'){
@@ -27,14 +27,35 @@ $(document).ready(function(){
     * сохранение данных в формате CSV
     */
     $('.csv').on('click', function(){
-        let data = [];
-        let id = $('tr.rows').children('.id');
-        for(let i = 0; i< $('.rows').length; i++){
+        var data = [];
+        var table;
+        var id = $(this).parent().siblings('.rows').children('.id');
+        for(var i = 0; i< $(this).parent().siblings('.rows').length; i++){
            
             data.push(id[i].innerHTML);
             
         }
-        $.ajax({
+        //запрос к архивной таблице
+        if($(this).hasClass('csv-arch')){
+            table = 'archeve';
+            $.ajax({
+                url: '/ajax/csv.php',
+                type: 'POST',
+                data: {
+                    data: data,
+                    table: table
+                }
+        })
+            .done(function(response) {
+                console.log("Всё хорошо, сервер вернул ответ"); 
+            console.log(response);
+                document.location = 'http://blog.loc/core/csv.php';
+            })
+            .fail(function() {
+                console.log("Что-то на сервере не так");
+            });
+        } else{
+            $.ajax({
                 url: '/ajax/csv.php',
                 type: 'POST',
                 data: {
@@ -49,37 +70,62 @@ $(document).ready(function(){
             .fail(function() {
                 console.log("Что-то на сервере не так");
             });
+        }
+        
+        
     });
     /*
     * фильтрация данных таблицы записей
     */
     $('.filter').on('change', function(){
-        let category = ($('#category_select').val());
-        let doctor = ($('#doctor_select').val());
-        let user = ($('#user_select').val());
-        let date = ($('#date_select').val());
-        let time = ($('#time_select').val());
+        //фильтрация для архивных записей
+        if($(this).hasClass('arch_filter')){
+            var category = ($('#category_arch_select').val());
+            var doctor = ($('#doctor_arch_select').val());
+            var user = ($('#user_arch_select').val());
+            var date = ($('#date_arch_select').val());
+            var time = ($('#time_arch_select').val());
+            var table = 'archeve';       
+        } else {
+            var category = ($('#category_select').val());
+            var doctor = ($('#doctor_select').val());
+            var user = ($('#user_select').val());
+            var date = ($('#date_select').val());
+            var time = ($('#time_select').val()); 
+            
+        }      
+        
 // Отправляем запрос
         $.ajax({
                 url: '/ajax/get_data_queue.php',
                 type: 'POST',
+                context: this,
                 data: {
                     date: date,
                     time: time,
                     login: user,
                     doctor: doctor,
-                    category: category
+                    category: category,
+                    table: table    
                 }
             })
-            .done(function(response) {
-               
+            .done(function(response) { 
                 console.log("Всё хорошо, сервер вернул ответ");
-                let notes = JSON.parse(response);
-            $('.shedule .rows').remove();
+            
+                 let notes = JSON.parse(response);        
+               $(this).parent().parent().siblings('.rows').remove();
+            if(table == 'archeve'){
                 for(let key in notes){
                     notes[key]['id'];
-                    $('.shedule').append('<tr class="rows"><td class="id">' + notes[key]['id'] + '</td><td>' + notes[key]['category'] + '</td><td>' + notes[key]['doctor'] + '</td><td>' + notes[key]['user'] + '</td><td>' + notes[key]['date'] + '</td><td>' + notes[key]['time'] + '</td><td><div class="delete delete_note"></div></td></tr>');
+                    $($(this).parent().parent().parent()).append('<tr class="rows"><td class="id">' + notes[key]['queue_id'] + '</td><td>' + notes[key]['category'] + '</td><td>' + notes[key]['doctor'] + '</td><td>' + notes[key]['user'] + '</td><td>' + notes[key]['date'] + '</td><td>' + notes[key]['time'] + '</td><td></td></tr>');
                 }
+            } else{
+                for(let key in notes){
+                    notes[key]['id'];
+                    $($(this).parent().parent().parent()).append('<tr class="rows"><td class="id">' + notes[key]['id'] + '</td><td>' + notes[key]['category'] + '</td><td>' + notes[key]['doctor'] + '</td><td>' + notes[key]['user'] + '</td><td>' + notes[key]['date'] + '</td><td>' + notes[key]['time'] + '</td><td><div title="Удалить" class="delete delete_note"></div></td></tr>');
+                }
+            }
+                
                
             })
             .fail(function() {
@@ -89,7 +135,6 @@ $(document).ready(function(){
     /*
     * Выбор даты
     */
- 
     $('#start').on('change', function(event) {
 	// Отправляем запрос
         

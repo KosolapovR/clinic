@@ -69,7 +69,7 @@
                <td class="email"><div><?=$col['email']?></div></td>
                <td class="img_path"><div><?=$col['img']?></div></td>
                <td class="verifyed"><div><?=$col['verifyed']?></div></td>     
-               <td><div class="delete delete_user"></div></td>
+               <td><div title="Удалить" class="delete delete_user"></div></td>
            </tr>
            <?php endforeach;?>
        </table>

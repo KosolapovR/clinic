@@ -8,6 +8,7 @@ define("MODELS", ROOT . "/models");
 define("CONTROLLERS", ROOT . "/controllers");
 define("CONFIG", ROOT . "/config");
 define("CLASSES", ROOT . "/classes");
+define("LOGS", ROOT . "/logs");
 
 //Database:
 

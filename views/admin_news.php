@@ -81,8 +81,8 @@
                <td class="img_path"><div><?=$col['img_path']?></div></td>
                <td><?=$col['love']?></td>
                <td><?=$col['views']?></td>
-               <td><div class="edit"></div></td>
-               <td><div class="delete delete_news"></div></td>
+               <td><div title="Редактировать" class="edit"></div></td>
+               <td><div title="Удалить" class="delete delete_news"></div></td>
            </tr>
            <?php endforeach;?>
        </table>

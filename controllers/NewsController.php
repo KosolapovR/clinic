@@ -26,11 +26,14 @@ class NewsController
     public function actionView(int $id)
     {
         $model = new model\NewsModel();
-        $model->updateViews($id, $this->user);
         $news = $model->getOneNews($id);
         $this->likes = new lib\Like();
         $like = $this->likes->getLikesByOneNews($id);
-        $likes_current_user = $this->likes->getLikesByUser($this->user);
+        if($this->user instanceof \lib\Users){
+            $model->updateViews($id, $this->user);
+            $likes_current_user = $this->likes->getLikesByUser($this->user);
+        }
+        
         require_once VIEWS . '/news_item.php';
     }
 }

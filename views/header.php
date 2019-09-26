@@ -46,14 +46,14 @@
                   <?php if(isset($_SESSION[session_id()])):?>
                       <div class="sign_up"><a href="http://blog.loc/reservation">Запись онлайн</a></div>
                   <?php else: ?>
-                       <div class="sign_up"><a href="login">Запись онлайн</a></div>
+                       <div class="sign_up"><a href="http://blog.loc/login">Запись онлайн</a></div>
                   <?php endif; ?>
               <?php endif; ?>
              
          </div>
           <ul class="nav_right">
               <?php if($_SERVER['REQUEST_URI'] != '/' && $_SERVER['REQUEST_URI'] != '/main' && $_SERVER['REQUEST_URI'] != '/exit'):?>
-              <li><a href="/main">главная</a></li>
+              <li><a href="http://blog.loc/main">главная</a></li>
               <?php endif; ?>
               <li><a href="">контакты</a></li>
               <?php if($_SERVER['REQUEST_URI'] != '/news'):?>
