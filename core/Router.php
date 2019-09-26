@@ -13,6 +13,8 @@ class Router {
         }   
         if ($uri == 'exit'){   
             session_unset();
+            unset($_COOKIE['auth']);
+            setcookie('auth', '', time() - 1000);
             $uri = "main"; 
         }
 

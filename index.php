@@ -1,8 +1,12 @@
 <?php
 session_start();
-header('Expires: Sun, 01 Jan 2014 00:00:00 GMT');
-header('Cache-Control: no-store, no-cache, must-revalidate');
+header("Cache-Control: no-cache, must-revalidate");
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
 header('Pragma: no-cache');
+if(isset($_COOKIE['auth'])){
+   $_SESSION[session_id()] = explode("/////", $_COOKIE['auth'])[0];
+}
+
 ini_set('display_errors', 1);
 ini_set('log_errors', 'On');
 ini_set('error_log', dirname(__FILE__) . '/error.log');

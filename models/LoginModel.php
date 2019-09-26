@@ -14,6 +14,28 @@ class LoginModel {
             $result = $stmt->fetchAll();
             //если логин и пароль есть в базе данных возвращаем true
             if($result) {
+                //реализуем запоминание пользователя и запись в куки
+                if(!empty($_POST['remember'])){
+                    $str = $_POST['name'];
+                    $str .= "/////";
+                    //генерируем куку
+                    for($i = 1; $i <= 16; $i++){
+                        $rand = mt_rand(33, 126);
+                        while ($rand == 60 || $rand == 43){
+                            $rand = mt_rand(33, 126);
+                        }
+                         $str .= chr($rand);
+                    }
+                    $str .= $_SERVER['REMOTE_ADDR'];
+                    if(setcookie('auth', $str, time() + 60*60*24)){
+                        //запись строки куки в БД
+                       $stmt = \lib\DBlink::getInstance()->prepare("UPDATE passwords SET cookies=:cookie WHERE user=:user");
+                       $stmt->execute(array(
+                            ':cookie' => $str,
+                           ':user' => $_POST['name']));
+                    }          
+                    
+                }
                 return true;
             } else {
                 return false;

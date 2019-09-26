@@ -52,6 +52,9 @@ body{
     
 }
 
+#remember{
+    margin-left: 20px;
+}
 
 .focus{
    border-bottom-color: linear-gradient(90deg, #dfe6e9, #b2bec3);

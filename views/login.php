@@ -19,8 +19,12 @@
                <label for="pass">ПАРОЛЬ</label>
             <input id="pass" name="pass" type="password">
             </div>
+            <label for="remember">Запомнить меня</label>
+            <input id="remember" name="remember" type="checkbox">
             <input type="submit" name="login" value="Войти">
+            
             <a href="auth">Регистрация</a>
+            
         </form>
     </div>
 </body>

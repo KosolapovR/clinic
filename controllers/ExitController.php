@@ -14,6 +14,12 @@
 class ExitController {
     public function actionIndex()
     {
-        session_destroy();      
+        die('EXIT');
+        //unset($_COOKIE['auth']);
+        //setcookie('auth', '', time() - 1000);
+       // session_destroy();     
+        //header("Location: http://blog.loc");
+        //
+        
     }
 }
